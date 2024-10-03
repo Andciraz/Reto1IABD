@@ -2,10 +2,16 @@ import requests
 import json
 import datetime
 import logging
+from bs4 import BeautifulSoup
 
 # Api de eventos culturales
 BASE_URL = 'https://api.euskadi.eus/culture/events/'
-BASE_PATH = './Apli/Reto1/Data/Ingesta/'
+BASE_PATH = './Data/'
+ATTRS = [
+    "typeEs", "nameEs", "startDate", "endDate", "publicationDate", "language",
+    "openingHoursEs", "sourceNameEs", "sourceUrlEs", "municipalityEs",
+    "establishmentEs", "urlEventEs", "images", "attachment"
+        ]
 
 logging.basicConfig(
     filename=f"{BASE_PATH}openData.log",
@@ -24,7 +30,7 @@ try:
     if response.status_code == 200:
         logging.info(f"Peticion a {endpoint} realizada correctamente.")
         data_response = response.json()
-        print(data_response)
+        # print(data_response)
 
         idTipo = -1
         for tipo in data_response:
@@ -49,7 +55,62 @@ try:
         currentPage = data_response["currentPage"]
         eventos = []
         for item in data_response["items"]:
-            eventos.append(item)
+            evento = {}
+
+            for attr in ATTRS: 
+                if attr in item: 
+                    evento[attr] = item[attr]
+
+            # print (item["descriptionEs"])
+
+            try:
+                soup = BeautifulSoup(item["descriptionEs"], "html.parser")
+                evento["descriptionEs"] = soup.get_text()
+                pelicula = {}
+
+                # TODO: Controlar que no haya descripcion
+                try:
+                    ps = soup.find_all("p")
+
+                    descripcion = ""
+                    for p in ps:
+                        descripcion += p.get_text()
+
+                    if "Ficha técnica:" in descripcion:
+                        descripcion = descripcion.replace("Ficha técnica:", "")
+
+                    try:
+                        tabla = soup.find("ul")
+                        if tabla:
+                            for li in tabla.find_all("li"):
+                                    # TODO: quitar tildes y caracteres especiales
+                                    str = li.get_text().split(":", maxsplit=1)
+                                    print (tabla)
+                                    pelicula[str[0]] = str[1]
+                    except Exception as e: 
+                        logging.critical(f'{e}') #TODO
+
+
+
+                    pelicula["description"] = descripcion
+                    # print (soup)
+                except Exception as e: 
+                    logging.critical(f'{e}') #TODO
+
+                try:
+                    print("")
+                    lista = soup.find("ul")
+
+                    # TODO: Sacar las listas separar : controlar ficha...
+
+                    # print(soup.get_text())
+                except Exception as e: 
+                    logging.critical(f'{e}') #TODO
+
+                evento["film"] = pelicula
+                eventos.append(evento)
+            except Exception as e: 
+                logging.critical(f'{e}') #TODO
 
         while currentPage <= totalPages:
             currentPage += 1

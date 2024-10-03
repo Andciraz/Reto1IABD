@@ -1,0 +1,51 @@
+[
+    {
+
+        "typeEs": "Cine y audiovisuales",
+        "nameEs": "\"El Rey Leon\"",
+        "startDate": "2024-07-06T00:00:00Z",
+        "endDate": "2024-07-06T00:00:00Z",
+        "publicationDate": "2024-05-27T12:22:23Z",
+        "language": "ES",
+        "openingHoursEs": "17:00",
+        "sourceNameEs": "Donostia Kultura",
+        "sourceUrlEs": "https://www.donostiakultura.eus/es/elrey-leon-uztaila06-cast",
+        "descriptionEs": "<p>La sabana africana es el escenario en el que tienen lugar las aventuras de Simba, un peque&ntilde;o le&oacute;n que es el heredero del trono. Sin embargo, al ser injustamente acusado por el malvado Scar de la muerte de su padre, se ve obligado a exiliarse. Durante su destierro, har&aacute; buenas amistades e intentar&aacute; regresar para recuperar lo que leg&iacute;timamente le corresponde.</p>\r\n<p>AEB</p>\r\n<p>Director:&nbsp;<strong>Rob Minkoff, Roger Allers.</strong></p>\r\n<p>M&aacute;s informaci&oacute;n en la web de Filmaffinity:&nbsp;<a href=\"https://www.filmaffinity.com/es/film419029.html\" rel=\"noopener\" target=\"_blank\"><strong>El Rey Leon</strong></a>.</p>",
+        "municipalityEs": "Donostia-San Sebastián",
+        "establishmentEs": "Centro Cultural Aiete",
+        "urlEventEs": "https://www.donostiakultura.eus/index.php?option=com_flexicontent&view=items&cid=70&id=3325&Itemid=151&lang=es",
+        "images": [
+            {
+                "imageId": "900294",
+                "imageFileName": "ELREYLEONARGAZKIAHANDIA.jpg",
+                "imageUrl": "https://opendata.euskadi.eus/contenidos/evento/2024052405035814/es_def/images/ELREYLEONARGAZKIAHANDIA.jpg"
+            }
+        ],
+        "attachment": []
+    },
+    {
+        "typeEs": "Cine y audiovisuales",
+        "nameEs": "Jazzinema 2024: \"Elis & Tom. Só tinha de ser com você\" (Presenta Alberto Ibarrondo)",
+        "startDate": "2024-07-03T00:00:00Z",
+        "endDate": "2024-07-03T00:00:00Z",
+        "publicationDate": "2024-07-01T10:07:36Z",
+        "openingHoursEs": "19:00",
+        "sourceNameEs": "Filmoteca Vasca",
+        "sourceUrlEs": "https://filmoteka.eus/eu/programazioa/elis-tom",
+        "municipalityEs": "Vitoria-Gasteiz",
+        "establishmentEs": "Artium Museoa",
+        "urlEventEs": "https://www.artium.eus/",
+        "images": [
+            {
+                "imageId": "913321",
+                "imageFileName": "asdf2.jpg",
+                "imageUrl": "https://opendata.euskadi.eus/contenidos/evento/2024070110060122/es_def/images/asdf2.jpg"
+            }
+        ],
+        "attachment": [],
+        "descriptionEs": "\nDentro del ciclo Jazzinema 2024.\n\n\nEn 1974 la grabación de un disco en Los Ángeles juntó a dos de los más grandes artistas de la bossa nova: Elis Regina y António Carlos Jobim. La excepcional y versátil voz de Elis Regina era el vehículo ideal para las composiciones del genial Tom Jobim. El disco se tituló simplemente Elis & Tom. A través de grabaciones de época y entrevistas con algunos de los protagonistas nos acercamos a aquel momento complejo, pero mágico.\nTítulo original ELIS & TOM. SÓ TINHA DE SER COM VOCÊDirección Roberto de Oliveira, Jom Tob AzulayAño 2023País BrasilProducción Diogo Pires GonçalvesGuion Roberto de Oliveira, Nelson MottaIdioma Portugués, inglésSubtítulos CastellanoDuración 100´Intérpretes Elis Regina, Tom Jobim, Paulo Braga, César Camargo Mariano, Roberto de Oliveira\n",
+        "film": {
+            "description": "Dentro del ciclo Jazzinema 2024.En 1974 la grabación de un disco en Los Ángeles juntó a dos de los más grandes artistas de la bossa nova: Elis Regina y António Carlos Jobim. La excepcional y versátil voz de Elis Regina era el vehículo ideal para las composiciones del genial Tom Jobim. El disco se tituló simplemente Elis & Tom. A través de grabaciones de época y entrevistas con algunos de los protagonistas nos acercamos a aquel momento complejo, pero mágico.Título original ELIS & TOM. SÓ TINHA DE SER COM VOCÊDirección Roberto de Oliveira, Jom Tob AzulayAño 2023País BrasilProducción Diogo Pires GonçalvesGuion Roberto de Oliveira, Nelson MottaIdioma Portugués, inglésSubtítulos CastellanoDuración 100´Intérpretes Elis Regina, Tom Jobim, Paulo Braga, César Camargo Mariano, Roberto de Oliveira"
+        }
+    }
+]
