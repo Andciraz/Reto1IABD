@@ -3,6 +3,8 @@ import json
 import datetime
 import logging
 from bs4 import BeautifulSoup
+import unicodedata
+import re
 
 # Api de eventos culturales
 BASE_URL = 'https://api.euskadi.eus/culture/events/'
@@ -19,6 +21,85 @@ logging.basicConfig(
     format = '%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
+
+def quitar_tildes(texto):
+    # Normalizamos el texto a una forma compatible (NFKD descompone los caracteres acentuados)
+    texto_normalizado = unicodedata.normalize('NFKD', texto)
+    # Filtramos los caracteres que no sean de la categoría "Mn" (caracteres diacríticos como tildes)
+    texto_sin_tildes = ''.join([c for c in texto_normalizado if not unicodedata.combining(c)])
+    return texto_sin_tildes
+
+def limpiar_str(texto):
+    try:
+        texto = quitar_tildes(texto)
+        texto = texto.strip().lower()
+    except Exception as e: 
+            logging.critical(f'Error limpiando el string: {texto}, {e}') 
+    return texto
+
+def formatear(item):
+    evento = {}
+
+    for attr in ATTRS: 
+        if attr in item: 
+            evento[attr] = item[attr]
+
+
+    try:
+        soup = BeautifulSoup(item["descriptionEs"], "html.parser")
+        pelicula = {}
+
+        # TODO: Controlar que no haya descripcion
+        try:
+            ps = soup.find_all("p")
+
+            descripcion = ""
+            for p in ps:
+                descripcion += p.get_text()
+
+            if "Ficha técnica:" in descripcion:
+                descripcion = descripcion.replace("Ficha técnica:", "")
+
+            try:
+                tablas = soup.find_all("ul")
+
+                if tablas:
+                    for tabla in tablas:
+
+                        for li in tabla.find_all("li"):
+                            li_txt = li.get_text()
+
+                            if ":" in li_txt:
+                                str = li_txt.split(":", maxsplit=1)
+                                key = limpiar_str(str[0])
+
+                                if "," in str[1]:
+                                    patron = r',| y '
+
+                                    frags = re.split(patron, str[1])
+                                    for i in range(0, len(frags)):
+                                        frags[i] = frags[i].strip()
+                                    pelicula[key] = frags
+                                else:
+                                    pelicula[key] = str[1].strip()
+                            else: 
+                                if "datos" not in pelicula.keys():
+                                    pelicula["datos"] = []
+
+                                pelicula["datos"].append(li_txt)
+            except Exception as e: 
+                logging.critical(f'{e}') #TODO
+
+            pelicula["description"] = descripcion
+        except Exception as e: 
+            logging.error(f'{e}') #TODO
+
+        evento["info"] = pelicula
+
+        return evento
+    except Exception as e: 
+        logging.error(f'{e}') #TODO
+
 
 # Extraccion de los codigos de tipos de eventos
 try: 
@@ -55,62 +136,7 @@ try:
         currentPage = data_response["currentPage"]
         eventos = []
         for item in data_response["items"]:
-            evento = {}
-
-            for attr in ATTRS: 
-                if attr in item: 
-                    evento[attr] = item[attr]
-
-            # print (item["descriptionEs"])
-
-            try:
-                soup = BeautifulSoup(item["descriptionEs"], "html.parser")
-                evento["descriptionEs"] = soup.get_text()
-                pelicula = {}
-
-                # TODO: Controlar que no haya descripcion
-                try:
-                    ps = soup.find_all("p")
-
-                    descripcion = ""
-                    for p in ps:
-                        descripcion += p.get_text()
-
-                    if "Ficha técnica:" in descripcion:
-                        descripcion = descripcion.replace("Ficha técnica:", "")
-
-                    try:
-                        tabla = soup.find("ul")
-                        if tabla:
-                            for li in tabla.find_all("li"):
-                                    # TODO: quitar tildes y caracteres especiales
-                                    str = li.get_text().split(":", maxsplit=1)
-                                    print (tabla)
-                                    pelicula[str[0]] = str[1]
-                    except Exception as e: 
-                        logging.critical(f'{e}') #TODO
-
-
-
-                    pelicula["description"] = descripcion
-                    # print (soup)
-                except Exception as e: 
-                    logging.critical(f'{e}') #TODO
-
-                try:
-                    print("")
-                    lista = soup.find("ul")
-
-                    # TODO: Sacar las listas separar : controlar ficha...
-
-                    # print(soup.get_text())
-                except Exception as e: 
-                    logging.critical(f'{e}') #TODO
-
-                evento["film"] = pelicula
-                eventos.append(evento)
-            except Exception as e: 
-                logging.critical(f'{e}') #TODO
+            eventos.append(formatear(item))
 
         while currentPage <= totalPages:
             currentPage += 1
@@ -123,7 +149,7 @@ try:
                 data_response = response.json()
 
                 for item in data_response["items"]:
-                    eventos.append(item)
+                    eventos.append(formatear(item))
             except Exception as e: 
                 logging.critical(f'Error inesperado al extraer la pagina {currentPage}: {e}')
 
@@ -144,3 +170,6 @@ except Exception as e:
     logging.critical(f'Error inesperado: {e}')
 else: 
     logging.info("Ingesta completada correctamente.")
+
+
+
