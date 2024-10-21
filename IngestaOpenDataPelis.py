@@ -31,6 +31,8 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
+SESSION = requests.sessions.session()
+
 # Elimina tildes y caracteres especiales del texto que se pasa como parámetro utilizando la libreria unicodedata
 def quitar_tildes(texto):
     # Normalizamos el texto a una forma compatible (NFKD descompone los caracteres acentuados)
@@ -131,7 +133,7 @@ try:
     logging.info(f'Realizando conexion a la api {BASE_URL}')
 
     # Llamada al endpoint que devuelve los tipos de ventos culturales junto con sus ids
-    response = requests.get(BASE_URL + endpoint)
+    response = SESSION.get(BASE_URL + endpoint)
 
     if response.status_code == 200:
         logging.info(f"Peticion a {endpoint} realizada correctamente.")
@@ -146,7 +148,7 @@ try:
                 endpoint = f"v1.0/events/byType/{idTipo}"
 
                 # Se extraen los eventos del tipo cuyo id ha sido previamente obtenido
-                response = requests.get(BASE_URL + endpoint)
+                response = SESSION.get(BASE_URL + endpoint)
 
                 if response.status_code == 200:
                     logging.info(f"Peticion a {endpoint} realizada correctamente.")
@@ -170,7 +172,7 @@ try:
                         }
 
                         try:
-                            response = requests.get(BASE_URL + endpoint, params=params)
+                            response = SESSION.get(BASE_URL + endpoint, params=params)
                             data_response = response.json()
 
                             for item in data_response["items"]:
