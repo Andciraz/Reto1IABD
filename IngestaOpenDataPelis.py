@@ -1,3 +1,4 @@
+import logging.config
 import requests
 import json
 import datetime
@@ -8,6 +9,7 @@ import re
 
 # Api de eventos culturales
 BASE_URL = 'https://api.euskadi.eus/culture/events/'
+TMBD_URL = "https://api.themoviedb.org/3/search/multi"
 
 # Carpeta almacenamiento de los archivos json
 BASE_PATH = './Data/apis'
@@ -24,6 +26,21 @@ EVENT_TYPES = [
     "Cine y audiovisuales", "Actividad Infantil"
 ]
 
+HEADERS = {
+    "accept": "application/json",
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZjU1MzAyMmE0ZDg2YzA4OWUxZTNiZjgwZmZhNGYyZiIsIm5iZiI6MTcyODQ4ODczOS45NDI4NDQsInN1YiI6IjY3MDZhNDE4NTk3YzEyNmYwN2RkZDZiNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.H874m0N8DVjqDkjAudBq9YEYRKK_KnLAzMMIICHIlkI"
+}
+
+ATTRS_PELICULA = {
+    "id": "id_pelicula",
+    "original_language": "idioma_original",
+    "original_title": "titulo_original", 
+    "popularity": "popularidad",
+    "release_date": "fecha_estreno",
+    "vote_average": "media_votos",
+    "vote_count": "num_votos"
+}
+
 logging.basicConfig(
     filename=f"openData.log",
     level = logging.DEBUG,
@@ -31,7 +48,7 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
-SESSION = requests.sessions.session()
+session = requests.sessions.session()
 
 # Elimina tildes y caracteres especiales del texto que se pasa como parámetro utilizando la libreria unicodedata
 def quitar_tildes(texto):
@@ -56,18 +73,15 @@ def limpiar_str(texto):
 # Devuelve un mapeo los elementos obtenidos de la api, además de formatear la descripción de los mismos a un formato no html
 def formatear(item):
     
-    evento = {}
+    pelicula = {}
 
     for attr in ATTRS: 
         if attr in item: 
-            evento[attr] = item[attr]
+            pelicula[attr] = item[attr]
 
     if ("descriptionEs" in item.keys()) and len(item["descriptionEs"].strip()) > 0:
         try:
             soup = BeautifulSoup(item["descriptionEs"], "html.parser")
-
-            # Mapa en el que guardar la información que se pueda extraer de la descripción
-            pelicula = {}
 
             try:
                 ps = soup.find_all("p")
@@ -118,22 +132,62 @@ def formatear(item):
             except Exception as e: 
                 logging.error(f'{e}') #TODO
 
-            evento["info"] = pelicula
+            pelicula
             
         except Exception as e: 
             logging.error(f'{e}') #TODO
 
-    return evento
+    return pelicula
+
+errores = []
+
+def detalles_peli(evento): 
+    logging.debug(f"Entrando a 'detalles_peli({evento["nameEs"]})'")
+
+    titulo = evento["nameEs"]
+    if "\"" in titulo: 
+        titulo = titulo[titulo.find("\"")+1:titulo.rfind("\"")]
+
+    try: 
+        params = {
+            "query": titulo,
+            "language": "es-ES",
+            "include_adult": True
+        }
+
+        response = session.get(TMBD_URL, headers=HEADERS, params=params)
+
+        if response.status_code == 200:
+            data_response = response.json()
+            peli_api = {}
+
+            if data_response["results"] and len(data_response["results"]) > 0:
+                peli_api = data_response["results"][0]
+                
+                for attr_key, attr_value in ATTRS_PELICULA.items():
+                    if attr_key in peli_api.keys():
+                        evento[attr_value] = peli_api[attr_key]
+                
+            else: 
+                raise Exception(f"No se ha encontrado coincidencias en {evento['nameEs']}") 
+
+            logging.debug(f"{evento["nameEs"]} cargada en el mapa")    
+    except Exception as e: 
+        logging.error(f'Error al extraer detalles de {titulo}: {e}')
+        errores.append(titulo)
+    finally: 
+        return evento
 
 
 # Extraccion de los codigos de tipos de eventos
 try: 
+    logging.info("Iniciando ingesta eventos opendata")
     endpoint = "v1.0/eventType"
 
     logging.info(f'Realizando conexion a la api {BASE_URL}')
 
     # Llamada al endpoint que devuelve los tipos de ventos culturales junto con sus ids
-    response = SESSION.get(BASE_URL + endpoint)
+    response = session.get(BASE_URL + endpoint)
 
     if response.status_code == 200:
         logging.info(f"Peticion a {endpoint} realizada correctamente.")
@@ -148,7 +202,7 @@ try:
                 endpoint = f"v1.0/events/byType/{idTipo}"
 
                 # Se extraen los eventos del tipo cuyo id ha sido previamente obtenido
-                response = SESSION.get(BASE_URL + endpoint)
+                response = session.get(BASE_URL + endpoint)
 
                 if response.status_code == 200:
                     logging.info(f"Peticion a {endpoint} realizada correctamente.")
@@ -161,7 +215,7 @@ try:
                         evento = formatear(item)
 
                         if evento:
-                            eventos.append(evento)
+                            eventos.append(detalles_peli(evento))
 
                     # La api devuelve la informacion paginada, por lo que se hacen varias peticiones hasta extraer toda la información
                     while currentPage <= totalPages:
@@ -172,14 +226,14 @@ try:
                         }
 
                         try:
-                            response = SESSION.get(BASE_URL + endpoint, params=params)
+                            response = session.get(BASE_URL + endpoint, params=params)
                             data_response = response.json()
 
                             for item in data_response["items"]:
                                 evento = formatear(item)
 
                                 if evento:
-                                    eventos.append(evento)
+                                    eventos.append(detalles_peli(evento))
                         except Exception as e: 
                             logging.critical(f'Error inesperado al extraer la pagina {currentPage}: {e}')
 
@@ -210,6 +264,8 @@ except Exception as e:
     logging.critical(f'Error inesperado: {e}')
 else: 
     logging.info("Ingesta completada correctamente.")
+finally:
+    logging.info(errores)
 
 
 
