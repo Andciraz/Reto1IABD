@@ -149,14 +149,14 @@ def cargar_paises():
 
 try:
     peliculas_blog = json.load(open(f'{R_PATH}/Scrappy-pruebas.json', encoding="utf8"))
-    peliculas = {}
+    peliculas = []
     providers = []
 
     cargar_paises()
 
     for pelicula in peliculas_blog.values():
         peli_detalles = detalles_peli(pelicula)
-        peliculas[pelicula["nombre"]] = peli_detalles
+        peliculas.append(peli_detalles) 
 
         try:
             provs = providers_peli(peli_detalles)
