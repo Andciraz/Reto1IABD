@@ -2,7 +2,6 @@ import requests
 import json
 import datetime
 import logging
-from bs4 import BeautifulSoup
 import unicodedata
 import re
 
@@ -35,6 +34,14 @@ ATTRS = {
     "vote_count": "num_votos"
 }
 
+PROVIDER_TYPES = {
+    "flatrate": "gratuito",
+    "rent": "alquiler",
+    "buy": "compra"
+}
+
+PAISES = {}
+
 session = requests.session()
 
 errores = []
@@ -45,8 +52,13 @@ def detalles_peli(pelicula):
     logging.debug(f"Entrando a 'detalles_peli({pelicula["nombre"]})'")
 
     try:
+        titulo = pelicula["nombre"]
+
+        if "Series" in pelicula["categoria"]:
+            titulo = titulo.rsplit("–", maxsplit=1)[0].strip()
+
         params = {
-            "query": pelicula["nombre"],
+            "query": titulo,
             "language": "es-ES",
             "include_adult": True
         }
@@ -67,24 +79,105 @@ def detalles_peli(pelicula):
             else: 
                 raise Exception(f"No se ha encontrado coincidencias en {pelicula['nombre']}") 
 
-            logging.info(f"{pelicula["nombre"]} cargada en el mapa")    
+            logging.debug(f"{pelicula["nombre"]} cargada en el mapa")    
     except Exception as e: 
         logging.error(e)
         errores.append(pelicula["nombre"])
     finally: 
         return pelicula
 
-# def formatear_peliculas():
+def providers_peli(peli_detalles):
+    providers = []
+
+    if "id" in peli_detalles.keys():       
+        url = f"https://api.themoviedb.org/3/movie/{peli_detalles["id"]}/watch/providers"
+
+        if "Series" in peli_detalles["categoria"]:
+            url = f"https://api.themoviedb.org/3/tv/{peli_detalles["id"]}/watch/providers"
+
+        try:
+            logging.debug("")
+            response = session.get(url, headers=HEADERS)
+
+            if response.status_code == 200:
+                data_response = response.json()
+                peli_id = data_response["id"]
+
+                for pais in data_response["results"]:
+                    provs = data_response["results"][pais]
+                    for prov_type in PROVIDER_TYPES:
+
+                        if prov_type in provs.keys():
+                            for prov in provs[prov_type]:
+                                provider = {
+                                    "id": peli_id,
+                                    "pais": pais,
+                                    "proveedor": prov["provider_name"],
+                                    "tipo": PROVIDER_TYPES[prov_type]
+                                }
+
+                                if pais in PAISES.keys():
+                                    provider["pais"] += f"-{PAISES[pais]}" 
+
+                                providers.append(provider)
+
+        except requests.exceptions.HTTPError as http_err: 
+            logging.error(f'Error HTTP: {http_err}')
+        except requests.exceptions.ConnectionError as conn_err: 
+            logging.error(f'Error de conexion: {conn_err}')
+        except requests.exceptions.Timeout as timeout_err: 
+            logging.error(f'Error de timeout: {timeout_err}')
+        except requests.exceptions.RequestException as req_err: 
+            logging.error(f'Error en la solicitud: {req_err}')
+        except Exception as e: 
+            logging.error(f'Error inesperado: {e}')
+        finally:
+            return providers
+
+def cargar_paises():
+    try: 
+        response = session.get("https://api.themoviedb.org/3/configuration/countries", headers=HEADERS)
+
+        if response.status_code == 200:
+            data_response = response.json()
+
+            for pais in data_response:
+                PAISES[pais["iso_3166_1"]] = pais["english_name"]
+
+    except Exception as e: 
+        logging.error(f'Error inesperado: {e}')
+
 try:
     peliculas_blog = json.load(open(f'{R_PATH}/Scrappy-pruebas.json', encoding="utf8"))
     peliculas = {}
+    providers = []
+
+    cargar_paises()
 
     for pelicula in peliculas_blog.values():
-        peliculas[pelicula["nombre"]] = detalles_peli(pelicula)
+        peli_detalles = detalles_peli(pelicula)
+        peliculas[pelicula["nombre"]] = peli_detalles
+
+        try:
+            provs = providers_peli(peli_detalles)
+            if provs and len(provs) > 0:
+                providers.extend(provs)
+        except Exception as e:
+            logging.error(e)
+
+    archivo_json = f'{W_PATH}/peliculas_api.json'
 
     with open(archivo_json, "w", encoding="utf-8") as file: 
         json.dump(peliculas, file, ensure_ascii=False,  indent=4)
-        logging.info("Archivo json generado correctamente.")
+        logging.info("Archivo json peliculas generado correctamente.")
+
+    archivo_json = f'{W_PATH}/providers_api.json'
+
+    with open(archivo_json, "w", encoding="utf-8") as file: 
+        json.dump(providers, file, ensure_ascii=False,  indent=4)
+        logging.info("Archivo json providers generado correctamente.")
+
+    
 
 except requests.exceptions.HTTPError as http_err: 
     logging.error(f'Error HTTP: {http_err}')
