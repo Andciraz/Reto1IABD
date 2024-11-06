@@ -1,79 +1,249 @@
 from bs4 import BeautifulSoup
 from unidecode import unidecode
 import requests
+import json
+import logging
+import re
+from datetime import datetime
 
-MOVIE = False
-def scrap_categories(base_url, movies):
+logging.basicConfig(
+    filename=f"Data/scrappy-logs-{datetime.now().strftime('%Y%m%d')}.log",
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%Y/%m/%d %H:%M:%S"
+)
+
+SESSION = requests.Session()
+
+
+def save_movies(movies):
+    with open(f'Data/scrappy/scrappy-{datetime.now().strftime("%Y%m%d")}.json', 'w', encoding="utf-8") as file:
+        json.dump(movies, file, ensure_ascii=False, indent=4)
+
+
+def scrap_category_pages(category):
     try:
-        base_request = requests.get(base_url)
-        if base_request.status_code == 200:
-            main_soup = BeautifulSoup(base_request.content, 'html.parser')
-            filtered_categories = []
-            for i in range(16):
-                filtered_categories.append(main_soup.select("a[href*='category']")[i])
-            filtered_categories.remove(filtered_categories[14])
-            for category in filtered_categories:
-                category_request = requests.get(category['href'])
-                if category_request.status_code == 200:
-                    category_soup = BeautifulSoup(category_request.content, 'html.parser')
-                    pages_count = category_soup.find_all(class_="page-numbers")[5].get_text(strip=True)
-                    for count in range(1, int(pages_count)+1):
-                        page = "page/" + str(count) if count != 1 else ""
-                        category_page = unidecode(category.get_text(strip=True).lower()) if unidecode(category.get_text(strip=True).lower()) != "misterio" else "misterio-2"
-                        page_request = requests.get(base_url + "category/" + category_page + "/" + page)
-                        if page_request.status_code == 200:
-                            movies_found = BeautifulSoup(page_request.content, 'html.parser').find(class_="blog-section-grid-posts clearfix").find_all(class_="title front-view-title")
-                            for movie in movies_found:
-                                MOVIE = movie
-                                movie_request = requests.get(movie.find_next('a')['href'])
-                                if movie_request.status_code == 200:
-                                    movie_page = BeautifulSoup(movie_request.content, 'html.parser')
-                                    content_1 = movie_page.find(style="font-family: Trebuchet MS, sans-serif;")
-                                    content_2 = movie_page.find(class_="thecontent")
-                                    desc_1 = False
-                                    desc_2 = False
-                                    if content_1:
-                                        desc_1 = content_1.find(text=True, recursive=False)
-                                    if content_2:
-                                        desc_2 = content_2.contents[3].get_text()
-
-                                    reproductor = movie_page.find('iframe')
-                                    video = False
-                                    if reproductor:
-                                        video = reproductor['src']
-
-                                    portada = movie_page.find('img',fetchpriority="high")
-                                    imagen = False
-                                    if portada:
-                                        imagen = portada['src']
-
-                                    if not movies.get(movie.get_text(strip=True)[:movie.get_text(strip=True).rfind('(')-1], False):
-                                        movies[
-                                            movie.get_text(strip=True)[:movie.get_text(strip=True).rfind('(') - 1]] = {
-                                            "nombre": movie.get_text(strip=True)[:movie.get_text(strip=True).rfind('(') - 1],
-                                            "año": movie.get_text(strip=True)[
-                                                   movie.get_text(strip=True).rfind('(') + 1:len(
-                                                       movie.get_text(strip=True)) - 1],
-                                            "descripción": desc_1 or desc_2 or "No se ha encontrado",
-                                            "categoria": [category.get_text(strip=True)],
-                                            "video": video,
-                                            "portada": imagen,
-                                        }
-                                    else:
-                                        movie_categories = movies.get(movie.get_text(strip=True)[:movie.get_text(strip=True).rfind('(')-1]).get("categoria")
-                                        movie_categories.append(category.get_text(strip=True))
-                                        movies.get(movie.get_text(strip=True)[:movie.get_text(strip=True).rfind('(') - 1])["categoria"] = movie_categories
-                                else:
-                                    raise Exception(f"Error al realizar petición: {movie.find_next('a')['href']}")
-                        else:
-                            raise Exception(f"Error al realizar petición: {base_url + page}")
-                else:
-                    raise Exception(f"Error al realizar petición: {category['href']}")
-            return movies
+        logging.info(f"RECORRIENDO CATEGORIA {category.get_text(strip=True)}")
+        category_request = SESSION.get(category['href'])
+        if category_request.status_code == 200:
+            category_soup = BeautifulSoup(category_request.content, 'html.parser')
+            pages_count = category_soup.find_all(class_="page-numbers")[5].get_text(strip=True)
+            logging.info(
+                f"COMENZANDO A RECORRER PAGINAS ({int(pages_count)}) DE LA CATEGORIA {category.get_text(strip=True)}")
+            return pages_count
         else:
-            raise Exception(f"Error al realizar petición: {base_url}")
+            logging.error(f"Error al realizar petición: {category['href']}")
     except Exception as e:
-        print(MOVIE)
+        logging.critical(f"ERROR AL RECOGER INFORMACIÓN DE LA CATEGORIA: {category.get_text(strip=True)}")
+
+    return True
+
+
+def scrap_category_page(page_url):
+    try:
+        movies_found = False
+        page_request = SESSION.get(page_url)
+        if page_request.status_code == 200:
+            movies_found = BeautifulSoup(page_request.content, 'html.parser').find(
+                class_="blog-section-grid-posts clearfix").find_all(
+                class_="title front-view-title")
+        else:
+            logging.error(f"Error al realizar petición: {page_url}")
+        return movies_found
+    except Exception as e:
+        logging.critical(f"ERROR AL RECOGER INFORMACIÓN DE LA PAGINA {page_url}: {e}")
         raise e
 
 
+def scrap_movie(movies, movie, category):
+    try:
+        logging.info(f"SCRAPPEANDO PELICULA {movie.get_text(strip=True)}")
+        movie_request = SESSION.get(movie.find_next('a')['href'])
+        if movie_request.status_code == 200:
+            movie_page = BeautifulSoup(movie_request.content, 'html.parser')
+            content_1 = movie_page.find(
+                style="font-family: Trebuchet MS, sans-serif;")
+            content_2 = movie_page.find(class_="thecontent")
+            desc_1 = False
+            desc_2 = False
+            if content_1:
+                desc_1 = content_1.find(text=True, recursive=False)
+            if content_2:
+                desc_2 = content_2.contents[3].get_text()
+
+            reproductor = movie_page.find('iframe')
+            video = False
+            if reproductor:
+                video = reproductor['src']
+
+            portada = movie_page.find('img', fetchpriority="high")
+            imagen = False
+            if portada:
+                imagen = portada['src']
+
+            movie_name_with_year = re.sub("– Temporada .+ ", "", re.sub("\(\+18\)", "", movie.get_text(strip=True)))
+
+            name = movie_name_with_year[:movie_name_with_year.rfind('(') - 1]
+            year = movie_name_with_year[movie_name_with_year.rfind('(') + 1:len(movie_name_with_year) - 1]
+            if not movies.get(movie.get_text(strip=True), False):
+                logging.info(f"PELICULA AÑADIDA {movie.get_text(strip=True)}")
+                movies[movie.get_text(strip=True)] = {
+                    "nombre": name,
+                    "año": year,
+                    "descripción": desc_1 or desc_2 or "No se ha encontrado",
+                    "categoria": [category.get_text(strip=True)],
+                    "video": video,
+                    "portada": imagen,
+                }
+
+            else:
+                logging.info(
+                    f"PELICULA REPETIDA {movie.get_text(strip=True)} AÑADIENDO CATEGORIA {category.get_text(strip=True)}")
+                movie_categories = movies.get(name).get("categoria")
+                movie_categories.append(category.get_text(strip=True))
+                movies.get(name)["categoria"] = movie_categories
+            return movies.get(movie.get_text(strip=True), False)
+        else:
+            logging.error(
+                f"Error al realizar petición: {movie.find_next('a')['href']}")
+    except Exception as e:
+        logging.critical(
+            f"ERROR AL RECOGER INFORMACIÓN DE: {movie.find_next('a')['href']}")
+
+
+def scrap_categories(base_url=None):
+    try:
+        categories = False
+        base_request = SESSION.get(base_url)
+        if base_request.status_code == 200:
+            main_soup = BeautifulSoup(base_request.content, 'html.parser')
+
+            categories = main_soup.find('ul', id="menu-menu").select("a[href*='category']")
+            for category in categories:
+                if category.get_text(strip=True) == "Otros":
+                    categories.remove(category)
+        else:
+            logging.error(f"Error al realizar petición: {base_url}")
+        return categories
+    except Exception as e:
+        logging.critical(f"ERROR AL RECOGER LAS CATEGORIAS: {e}")
+        raise e
+
+
+def scrap_all(movies, base_url="https://www.blogdepelis.top/"):
+    """
+    ESTE METODO PERMITE SCRAPEAR UNA PAGINA CON UNA ESTRUCTURA COMO
+
+    https://www.blogdepelis.top/
+
+    EN CASO DE NO RECIBIR NINGUNA URL SE SCRAPEA ESA PAGINA
+
+
+    :param base_url:
+    :param movies:
+    :return:
+    """
+    try:
+
+        base_request = SESSION.get(base_url)
+        if base_request.status_code == 200:
+            main_soup = BeautifulSoup(base_request.content, 'html.parser')
+
+            filtered_categories = []
+            for i in range(17):
+                filtered_categories.append(main_soup.select("a[href*='category']")[i])
+            filtered_categories.remove(filtered_categories[14])
+            logging.info(f"COMENZANDO A RECORRER CATEGORIAS {filtered_categories}")
+            for category in filtered_categories:
+                try:
+                    logging.info(f"RECORRIENDO CATEGORIA {category.get_text(strip=True)}")
+                    category_request = SESSION.get(category['href'])
+                    if category_request.status_code == 200:
+
+                        category_soup = BeautifulSoup(category_request.content, 'html.parser')
+                        pages_count = category_soup.find_all(class_="page-numbers")[5].get_text(strip=True)
+                        logging.info(
+                            f"COMENZANDO A RECORRER PAGINAS ({int(pages_count)}) DE LA CATEGORIA {category.get_text(strip=True)}")
+                        for count in range(1, int(pages_count) + 1):
+                            try:
+                                logging.info(
+                                    f"RECORRIENDO PAGINA {count} DE LA CATEGORIA {category.get_text(strip=True)}")
+                                page = "page/" + str(count) if count != 1 else ""
+                                page_request = SESSION.get(category['href'] + "/" + page)
+                                if page_request.status_code == 200:
+
+                                    movies_found = BeautifulSoup(page_request.content, 'html.parser').find(
+                                        class_="blog-section-grid-posts clearfix").find_all(
+                                        class_="title front-view-title")
+                                    logging.info(f"COMENZANDO A RECORRER PELICULAS {movies_found}")
+                                    for movie in movies_found:
+                                        try:
+                                            logging.info(f"SCRAPPEANDO PELICULA {movie.get_text(strip=True)}")
+                                            movie_request = SESSION.get(movie.find_next('a')['href'])
+                                            if movie_request.status_code == 200:
+                                                movie_page = BeautifulSoup(movie_request.content, 'html.parser')
+                                                content_1 = movie_page.find(
+                                                    style="font-family: Trebuchet MS, sans-serif;")
+                                                content_2 = movie_page.find(class_="thecontent")
+                                                desc_1 = False
+                                                desc_2 = False
+                                                if content_1:
+                                                    desc_1 = content_1.find(text=True, recursive=False)
+                                                if content_2:
+                                                    desc_2 = content_2.contents[3].get_text()
+
+                                                reproductor = movie_page.find('iframe')
+                                                video = False
+                                                if reproductor:
+                                                    video = reproductor['src']
+
+                                                portada = movie_page.find('img', fetchpriority="high")
+                                                imagen = False
+                                                if portada:
+                                                    imagen = portada['src']
+
+                                                # TODO: Las porno no van (+18)
+                                                name = movie.get_text(strip=True)[
+                                                       :movie.get_text(strip=True).rfind('(') - 1]
+                                                if not movies.get(movie.get_text(strip=True)[
+                                                                  :movie.get_text(strip=True).rfind('(') - 1], False):
+                                                    logging.info(f"PELICULA AÑADIDA {movie.get_text(strip=True)}")
+                                                    movies[
+                                                        movie.get_text(strip=True)[
+                                                        :movie.get_text(strip=True).rfind('(') - 1]] = {
+                                                        "nombre": name,
+                                                        "año": movie.get_text(strip=True)[
+                                                               movie.get_text(strip=True).rfind('(') + 1:len(
+                                                                   movie.get_text(strip=True)) - 1],
+                                                        "descripción": desc_1 or desc_2 or "No se ha encontrado",
+                                                        "categoria": [category.get_text(strip=True)],
+                                                        "video": video,
+                                                        "portada": imagen,
+                                                    }
+
+                                                else:
+                                                    logging.info(
+                                                        f"PELICULA REPETIDA {movie.get_text(strip=True)} AÑADIENDO CATEGORIA {category.get_text(strip=True)}")
+                                                    movie_categories = movies.get(name).get("categoria")
+                                                    movie_categories.append(category.get_text(strip=True))
+                                                    movies.get(name)["categoria"] = movie_categories
+                                            else:
+                                                logging.error(
+                                                    f"Error al realizar petición: {movie.find_next('a')['href']}")
+                                        except Exception as e:
+                                            logging.critical(
+                                                f"ERROR AL RECOGER INFORMACIÓN DE: {movie.find_next('a')['href']}")
+                                else:
+                                    logging.error(f"Error al realizar petición: {base_url + page}")
+                            except Exception as e:
+                                logging.critical(
+                                    f"ERROR AL RECOGER INFORMACIÓN DE LA PAGINA {count} DE LA CATEGORIA {category.get_text(strip=True)}")
+                    else:
+                        logging.error(f"Error al realizar petición: {category['href']}")
+                except Exception as e:
+                    logging.critical(f"ERROR AL RECOGER INFORMACIÓN DE LA CATEGORIA: {category.get_text(strip=True)}")
+            return movies
+        else:
+            logging.error(f"Error al realizar petición: {base_url}")
+    except Exception as e:
+        raise e

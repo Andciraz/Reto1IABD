@@ -1,0 +1,88 @@
+from bs4 import BeautifulSoup
+from unidecode import unidecode
+import config
+import requests
+import logging
+from datetime import datetime
+logging.basicConfig(
+    filename=f"Data/scrappy-logs-{datetime.now().strftime('%Y%m%d')}.log",
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%Y/%m/%d %H:%M:%S"
+)
+
+BASE_CREDITS_URL = "https://api.themoviedb.org/3/"
+ENDPOINT_CREDITS = "/credits?language=es-ES"
+BASE_SEARCH_URL = "https://api.themoviedb.org/3/search/"
+
+HEADERS = {
+    "accept": "application/json",
+    "Authorization": "Bearer "+config.TOKEN
+}
+
+SESSION = requests.Session()
+
+def get_id(nombre, serie=False):
+    id = False
+    url = BASE_SEARCH_URL
+    if serie:
+        url += f"tv?query={nombre}&include_adult=false&language=es-ES&page=1"
+    else:
+        url += f"movie?query={nombre}&include_adult=false&language=es-ES&page=1"
+    response = SESSION.get(url, headers=HEADERS)
+    if response.status_code == 200:
+        data_response = response.json()
+        found = data_response['results'][0]
+        if found:
+            id = found['id']
+    if not id:
+        logging.critical(f"NO SE HA ENCONTRADO {nombre}")
+    return id
+
+def get_credits(id, serie=False):
+    url = BASE_CREDITS_URL
+    if serie:
+        url += f"tv/{id}/aggregate_credits?language=es-ES"
+    else:
+        url += f"movie/{id}/credits?language=es-ES"
+    response = SESSION.get(url, headers=HEADERS)
+    credits = {
+        'cast': {},
+        'crew': {},
+    }
+    if response.status_code == 200:
+        data_response = response.json()
+        if serie:
+            for cast in data_response['cast']:
+                if not credits['cast'].get(cast['name'], False):
+                    roles = []
+                    for role in cast['roles']:
+                        roles.append(role['character'])
+                    credits['cast'][cast['name']] = roles
+                else:
+                    for role in cast['roles']:
+                        credits['cast'][cast['name']].append(role['character'])
+            for crew in data_response['crew']:
+                if not credits['crew'].get(crew['name'], False):
+                    jobs = []
+                    for job in crew['jobs']:
+                        jobs.append(job['job'])
+                    credits['crew'][crew['name']] = jobs
+                else:
+                    for job in crew['jobs']:
+                        credits['crew'][crew['name']].append(job['job'])
+        else:
+            for cast in data_response['cast']:
+                if not credits['cast'].get(cast['name'], False):
+                    credits['cast'][cast['name']] = cast['character'].split("/")
+                else:
+                    for char in cast['character'].split("/"):
+                        credits['cast'][cast['name']].append(char)
+            for crew in data_response['crew']:
+                if not credits['crew'].get(crew['name'], False):
+                    credits['crew'][crew['name']] = crew['job'].split("/")
+                else:
+                    for job in crew['job'].split("/"):
+                        credits['crew'][crew['name']].append(job)
+    return credits
+
