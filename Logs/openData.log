@@ -1,0 +1,613 @@
+2024-10-09 20:04:25 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-09 20:04:25 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:26 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-09 20:04:26 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-09 20:04:26 - INFO - ID de Cine y audiovisuales: 9
+2024-10-09 20:04:26 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:27 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-09 20:04:27 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-09 20:04:27 - ERROR - 'descriptionEs'
+2024-10-09 20:04:27 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:27 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=2 HTTP/11" 200 None
+2024-10-09 20:04:28 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:28 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=3 HTTP/11" 200 None
+2024-10-09 20:04:28 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:28 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=4 HTTP/11" 200 None
+2024-10-09 20:04:28 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:28 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=5 HTTP/11" 200 None
+2024-10-09 20:04:29 - ERROR - 'descriptionEs'
+2024-10-09 20:04:29 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:29 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=6 HTTP/11" 200 None
+2024-10-09 20:04:29 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:29 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=7 HTTP/11" 200 None
+2024-10-09 20:04:29 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:29 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=8 HTTP/11" 200 None
+2024-10-09 20:04:29 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:30 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=9 HTTP/11" 200 None
+2024-10-09 20:04:30 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:30 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=10 HTTP/11" 200 None
+2024-10-09 20:04:30 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:30 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=11 HTTP/11" 200 None
+2024-10-09 20:04:30 - ERROR - 'descriptionEs'
+2024-10-09 20:04:30 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:30 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=12 HTTP/11" 200 None
+2024-10-09 20:04:30 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:31 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=13 HTTP/11" 200 None
+2024-10-09 20:04:31 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:31 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=14 HTTP/11" 200 None
+2024-10-09 20:04:31 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:31 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=15 HTTP/11" 200 None
+2024-10-09 20:04:31 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:32 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=16 HTTP/11" 200 None
+2024-10-09 20:04:32 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:32 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=17 HTTP/11" 200 None
+2024-10-09 20:04:32 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:32 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=18 HTTP/11" 200 None
+2024-10-09 20:04:32 - ERROR - 'descriptionEs'
+2024-10-09 20:04:32 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:33 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=19 HTTP/11" 200 None
+2024-10-09 20:04:33 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:33 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=20 HTTP/11" 200 None
+2024-10-09 20:04:33 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:33 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=21 HTTP/11" 200 None
+2024-10-09 20:04:33 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:34 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=22 HTTP/11" 200 None
+2024-10-09 20:04:34 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:34 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=23 HTTP/11" 200 None
+2024-10-09 20:04:34 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:35 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=24 HTTP/11" 200 None
+2024-10-09 20:04:35 - ERROR - 'descriptionEs'
+2024-10-09 20:04:35 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:36 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=25 HTTP/11" 200 None
+2024-10-09 20:04:36 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:36 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=26 HTTP/11" 200 None
+2024-10-09 20:04:36 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-09 20:04:36 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=27 HTTP/11" 200 None
+2024-10-09 20:04:36 - INFO - Archivo json generado correctamente.
+2024-10-09 20:04:36 - INFO - Ingesta completada correctamente.
+2024-10-15 18:53:39 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-15 18:53:39 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:39 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-15 18:53:39 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-15 18:53:39 - INFO - ID de Cine y audiovisuales: 9
+2024-10-15 18:53:39 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:39 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-15 18:53:40 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-15 18:53:40 - ERROR - 'descriptionEs'
+2024-10-15 18:53:40 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:40 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=2 HTTP/11" 200 None
+2024-10-15 18:53:40 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:40 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=3 HTTP/11" 200 None
+2024-10-15 18:53:41 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:41 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=4 HTTP/11" 200 None
+2024-10-15 18:53:41 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:41 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=5 HTTP/11" 200 None
+2024-10-15 18:53:42 - ERROR - 'descriptionEs'
+2024-10-15 18:53:42 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:42 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=6 HTTP/11" 200 None
+2024-10-15 18:53:42 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:42 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=7 HTTP/11" 200 None
+2024-10-15 18:53:43 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:43 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=8 HTTP/11" 200 None
+2024-10-15 18:53:43 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:43 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=9 HTTP/11" 200 None
+2024-10-15 18:53:44 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:44 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=10 HTTP/11" 200 None
+2024-10-15 18:53:44 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:44 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=11 HTTP/11" 200 None
+2024-10-15 18:53:44 - ERROR - 'descriptionEs'
+2024-10-15 18:53:44 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:45 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=12 HTTP/11" 200 None
+2024-10-15 18:53:45 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:45 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=13 HTTP/11" 200 None
+2024-10-15 18:53:46 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:46 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=14 HTTP/11" 200 None
+2024-10-15 18:53:46 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:46 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=15 HTTP/11" 200 None
+2024-10-15 18:53:46 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:47 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=16 HTTP/11" 200 None
+2024-10-15 18:53:47 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:47 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=17 HTTP/11" 200 None
+2024-10-15 18:53:47 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:48 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=18 HTTP/11" 200 None
+2024-10-15 18:53:48 - ERROR - 'descriptionEs'
+2024-10-15 18:53:48 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:48 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=19 HTTP/11" 200 None
+2024-10-15 18:53:48 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:49 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=20 HTTP/11" 200 None
+2024-10-15 18:53:49 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:49 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=21 HTTP/11" 200 None
+2024-10-15 18:53:49 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:50 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=22 HTTP/11" 200 None
+2024-10-15 18:53:50 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:50 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=23 HTTP/11" 200 None
+2024-10-15 18:53:50 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:51 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=24 HTTP/11" 200 None
+2024-10-15 18:53:51 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:51 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=25 HTTP/11" 200 None
+2024-10-15 18:53:51 - ERROR - 'descriptionEs'
+2024-10-15 18:53:51 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:51 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=26 HTTP/11" 200 None
+2024-10-15 18:53:52 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:52 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=27 HTTP/11" 200 None
+2024-10-15 18:53:52 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:52 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=28 HTTP/11" 200 None
+2024-10-15 18:53:52 - INFO - ID de Cine y audiovisuales: 14
+2024-10-15 18:53:52 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:53 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14 HTTP/11" 200 None
+2024-10-15 18:53:53 - INFO - Peticion a v1.0/events/byType/14 realizada correctamente.
+2024-10-15 18:53:53 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-15 18:53:53 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14?_page=2 HTTP/11" 200 None
+2024-10-15 18:53:53 - INFO - Archivo json generado correctamente.
+2024-10-15 18:53:53 - INFO - Ingesta completada correctamente.
+2024-10-16 15:58:53 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-16 15:58:53 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:58:53 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-16 15:58:53 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-16 15:58:53 - INFO - ID de Cine y audiovisuales: 9
+2024-10-16 15:58:53 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:58:53 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-16 15:58:54 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-16 15:59:02 - ERROR - 'descriptionEs'
+2024-10-16 15:59:02 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:02 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=2 HTTP/11" 200 None
+2024-10-16 15:59:02 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:03 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=3 HTTP/11" 200 None
+2024-10-16 15:59:03 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:03 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=4 HTTP/11" 200 None
+2024-10-16 15:59:03 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:04 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=5 HTTP/11" 200 None
+2024-10-16 15:59:05 - ERROR - 'descriptionEs'
+2024-10-16 15:59:05 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:06 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=6 HTTP/11" 200 None
+2024-10-16 15:59:06 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:06 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=7 HTTP/11" 200 None
+2024-10-16 15:59:07 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:07 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=8 HTTP/11" 200 None
+2024-10-16 15:59:07 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:07 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=9 HTTP/11" 200 None
+2024-10-16 15:59:08 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:08 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=10 HTTP/11" 200 None
+2024-10-16 15:59:08 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:08 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=11 HTTP/11" 200 None
+2024-10-16 15:59:10 - ERROR - 'descriptionEs'
+2024-10-16 15:59:10 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:10 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=12 HTTP/11" 200 None
+2024-10-16 15:59:11 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:11 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=13 HTTP/11" 200 None
+2024-10-16 15:59:11 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:11 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=14 HTTP/11" 200 None
+2024-10-16 15:59:12 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:12 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=15 HTTP/11" 200 None
+2024-10-16 15:59:12 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:12 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=16 HTTP/11" 200 None
+2024-10-16 15:59:12 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:13 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=17 HTTP/11" 200 None
+2024-10-16 15:59:13 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:13 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=18 HTTP/11" 200 None
+2024-10-16 15:59:14 - ERROR - 'descriptionEs'
+2024-10-16 15:59:14 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:14 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=19 HTTP/11" 200 None
+2024-10-16 15:59:15 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:15 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=20 HTTP/11" 200 None
+2024-10-16 15:59:15 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:15 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=21 HTTP/11" 200 None
+2024-10-16 15:59:16 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:16 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=22 HTTP/11" 200 None
+2024-10-16 15:59:16 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:16 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=23 HTTP/11" 200 None
+2024-10-16 15:59:16 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:17 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=24 HTTP/11" 200 None
+2024-10-16 15:59:17 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:17 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=25 HTTP/11" 200 None
+2024-10-16 15:59:19 - ERROR - 'descriptionEs'
+2024-10-16 15:59:19 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:19 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=26 HTTP/11" 200 None
+2024-10-16 15:59:19 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=27 HTTP/11" 200 None
+2024-10-16 15:59:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=28 HTTP/11" 200 None
+2024-10-16 15:59:20 - INFO - ID de Cine y audiovisuales: 14
+2024-10-16 15:59:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14 HTTP/11" 200 None
+2024-10-16 15:59:20 - INFO - Peticion a v1.0/events/byType/14 realizada correctamente.
+2024-10-16 15:59:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 15:59:21 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14?_page=2 HTTP/11" 200 None
+2024-10-16 15:59:31 - INFO - Archivo json generado correctamente.
+2024-10-16 15:59:31 - INFO - Ingesta completada correctamente.
+2024-10-16 16:03:06 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-16 16:03:06 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:07 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-16 16:03:07 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-16 16:03:07 - INFO - ID de Cine y audiovisuales: 9
+2024-10-16 16:03:07 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:07 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-16 16:03:07 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-16 16:03:07 - ERROR - 'descriptionEs'
+2024-10-16 16:03:07 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:07 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=2 HTTP/11" 200 None
+2024-10-16 16:03:08 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:08 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=3 HTTP/11" 200 None
+2024-10-16 16:03:08 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:08 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=4 HTTP/11" 200 None
+2024-10-16 16:03:09 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:09 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=5 HTTP/11" 200 None
+2024-10-16 16:03:09 - ERROR - 'descriptionEs'
+2024-10-16 16:03:09 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:09 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=6 HTTP/11" 200 None
+2024-10-16 16:03:10 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:10 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=7 HTTP/11" 200 None
+2024-10-16 16:03:10 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:10 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=8 HTTP/11" 200 None
+2024-10-16 16:03:11 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:11 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=9 HTTP/11" 200 None
+2024-10-16 16:03:11 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:11 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=10 HTTP/11" 200 None
+2024-10-16 16:03:12 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:12 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=11 HTTP/11" 200 None
+2024-10-16 16:03:12 - ERROR - 'descriptionEs'
+2024-10-16 16:03:12 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:12 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=12 HTTP/11" 200 None
+2024-10-16 16:03:13 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:13 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=13 HTTP/11" 200 None
+2024-10-16 16:03:13 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:13 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=14 HTTP/11" 200 None
+2024-10-16 16:03:14 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:14 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=15 HTTP/11" 200 None
+2024-10-16 16:03:14 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:15 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=16 HTTP/11" 200 None
+2024-10-16 16:03:15 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:15 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=17 HTTP/11" 200 None
+2024-10-16 16:03:15 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:16 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=18 HTTP/11" 200 None
+2024-10-16 16:03:16 - ERROR - 'descriptionEs'
+2024-10-16 16:03:16 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:16 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=19 HTTP/11" 200 None
+2024-10-16 16:03:16 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:17 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=20 HTTP/11" 200 None
+2024-10-16 16:03:17 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:17 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=21 HTTP/11" 200 None
+2024-10-16 16:03:17 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:17 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=22 HTTP/11" 200 None
+2024-10-16 16:03:18 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:18 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=23 HTTP/11" 200 None
+2024-10-16 16:03:18 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:18 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=24 HTTP/11" 200 None
+2024-10-16 16:03:19 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:19 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=25 HTTP/11" 200 None
+2024-10-16 16:03:19 - ERROR - 'descriptionEs'
+2024-10-16 16:03:19 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:19 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=26 HTTP/11" 200 None
+2024-10-16 16:03:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=27 HTTP/11" 200 None
+2024-10-16 16:03:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=28 HTTP/11" 200 None
+2024-10-16 16:03:20 - INFO - ID de Cine y audiovisuales: 14
+2024-10-16 16:03:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14 HTTP/11" 200 None
+2024-10-16 16:03:21 - INFO - Peticion a v1.0/events/byType/14 realizada correctamente.
+2024-10-16 16:03:21 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:21 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14?_page=2 HTTP/11" 200 None
+2024-10-16 16:03:21 - INFO - Archivo json generado correctamente.
+2024-10-16 16:03:21 - INFO - Ingesta completada correctamente.
+2024-10-16 16:03:54 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-16 16:03:54 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:54 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-16 16:03:54 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-16 16:03:54 - INFO - ID de Cine y audiovisuales: 9
+2024-10-16 16:03:54 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:54 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-16 16:03:54 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-16 16:03:54 - ERROR - 'descriptionEs'
+2024-10-16 16:03:54 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:55 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=2 HTTP/11" 200 None
+2024-10-16 16:03:55 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:55 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=3 HTTP/11" 200 None
+2024-10-16 16:03:55 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:56 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=4 HTTP/11" 200 None
+2024-10-16 16:03:56 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:56 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=5 HTTP/11" 200 None
+2024-10-16 16:03:56 - ERROR - 'descriptionEs'
+2024-10-16 16:03:56 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:57 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=6 HTTP/11" 200 None
+2024-10-16 16:03:57 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:57 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=7 HTTP/11" 200 None
+2024-10-16 16:03:57 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:57 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=8 HTTP/11" 200 None
+2024-10-16 16:03:58 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:58 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=9 HTTP/11" 200 None
+2024-10-16 16:03:58 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:58 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=10 HTTP/11" 200 None
+2024-10-16 16:03:59 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:59 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=11 HTTP/11" 200 None
+2024-10-16 16:03:59 - ERROR - 'descriptionEs'
+2024-10-16 16:03:59 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:03:59 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=12 HTTP/11" 200 None
+2024-10-16 16:03:59 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:00 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=13 HTTP/11" 200 None
+2024-10-16 16:04:00 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:00 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=14 HTTP/11" 200 None
+2024-10-16 16:04:00 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:01 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=15 HTTP/11" 200 None
+2024-10-16 16:04:01 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:01 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=16 HTTP/11" 200 None
+2024-10-16 16:04:01 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:01 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=17 HTTP/11" 200 None
+2024-10-16 16:04:02 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:02 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=18 HTTP/11" 200 None
+2024-10-16 16:04:02 - ERROR - 'descriptionEs'
+2024-10-16 16:04:02 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:02 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=19 HTTP/11" 200 None
+2024-10-16 16:04:03 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:03 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=20 HTTP/11" 200 None
+2024-10-16 16:04:03 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:03 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=21 HTTP/11" 200 None
+2024-10-16 16:04:04 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:04 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=22 HTTP/11" 200 None
+2024-10-16 16:04:04 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:04 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=23 HTTP/11" 200 None
+2024-10-16 16:04:04 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:05 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=24 HTTP/11" 200 None
+2024-10-16 16:04:05 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:05 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=25 HTTP/11" 200 None
+2024-10-16 16:04:05 - ERROR - 'descriptionEs'
+2024-10-16 16:04:05 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:06 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=26 HTTP/11" 200 None
+2024-10-16 16:04:06 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:06 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=27 HTTP/11" 200 None
+2024-10-16 16:04:06 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:06 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=28 HTTP/11" 200 None
+2024-10-16 16:04:06 - INFO - ID de Cine y audiovisuales: 14
+2024-10-16 16:04:06 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:07 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14 HTTP/11" 200 None
+2024-10-16 16:04:07 - INFO - Peticion a v1.0/events/byType/14 realizada correctamente.
+2024-10-16 16:04:07 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:04:07 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14?_page=2 HTTP/11" 200 None
+2024-10-16 16:04:07 - INFO - Archivo json generado correctamente.
+2024-10-16 16:04:07 - INFO - Ingesta completada correctamente.
+2024-10-16 16:06:09 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-16 16:06:09 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:06:09 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-16 16:06:09 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-16 16:06:09 - INFO - ID de Cine y audiovisuales: 9
+2024-10-16 16:06:09 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:06:10 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-16 16:06:10 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-16 16:06:10 - CRITICAL - Error inesperado: list.append() takes exactly one argument (0 given)
+2024-10-16 16:08:37 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-16 16:08:37 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:37 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-16 16:08:37 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-16 16:08:37 - INFO - ID de Cine y audiovisuales: 9
+2024-10-16 16:08:37 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:38 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-16 16:08:38 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-16 16:08:38 - ERROR - 'descriptionEs'
+2024-10-16 16:08:38 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:38 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=2 HTTP/11" 200 None
+2024-10-16 16:08:38 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:38 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=3 HTTP/11" 200 None
+2024-10-16 16:08:39 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:39 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=4 HTTP/11" 200 None
+2024-10-16 16:08:39 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:40 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=5 HTTP/11" 200 None
+2024-10-16 16:08:40 - ERROR - 'descriptionEs'
+2024-10-16 16:08:40 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:40 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=6 HTTP/11" 200 None
+2024-10-16 16:08:40 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:41 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=7 HTTP/11" 200 None
+2024-10-16 16:08:41 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:41 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=8 HTTP/11" 200 None
+2024-10-16 16:08:41 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:41 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=9 HTTP/11" 200 None
+2024-10-16 16:08:42 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:42 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=10 HTTP/11" 200 None
+2024-10-16 16:08:42 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:42 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=11 HTTP/11" 200 None
+2024-10-16 16:08:42 - ERROR - 'descriptionEs'
+2024-10-16 16:08:42 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:43 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=12 HTTP/11" 200 None
+2024-10-16 16:08:43 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:43 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=13 HTTP/11" 200 None
+2024-10-16 16:08:43 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:44 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=14 HTTP/11" 200 None
+2024-10-16 16:08:44 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:44 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=15 HTTP/11" 200 None
+2024-10-16 16:08:44 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:44 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=16 HTTP/11" 200 None
+2024-10-16 16:08:44 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:45 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=17 HTTP/11" 200 None
+2024-10-16 16:08:45 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:45 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=18 HTTP/11" 200 None
+2024-10-16 16:08:45 - ERROR - 'descriptionEs'
+2024-10-16 16:08:45 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:46 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=19 HTTP/11" 200 None
+2024-10-16 16:08:46 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:46 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=20 HTTP/11" 200 None
+2024-10-16 16:08:46 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:46 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=21 HTTP/11" 200 None
+2024-10-16 16:08:46 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:47 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=22 HTTP/11" 200 None
+2024-10-16 16:08:47 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:47 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=23 HTTP/11" 200 None
+2024-10-16 16:08:47 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:48 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=24 HTTP/11" 200 None
+2024-10-16 16:08:48 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:48 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=25 HTTP/11" 200 None
+2024-10-16 16:08:48 - ERROR - 'descriptionEs'
+2024-10-16 16:08:48 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:48 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=26 HTTP/11" 200 None
+2024-10-16 16:08:49 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:49 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=27 HTTP/11" 200 None
+2024-10-16 16:08:49 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:49 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=28 HTTP/11" 200 None
+2024-10-16 16:08:49 - INFO - ID de Cine y audiovisuales: 14
+2024-10-16 16:08:49 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:49 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14 HTTP/11" 200 None
+2024-10-16 16:08:49 - INFO - Peticion a v1.0/events/byType/14 realizada correctamente.
+2024-10-16 16:08:49 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:08:50 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14?_page=2 HTTP/11" 200 None
+2024-10-16 16:08:50 - INFO - Archivo json generado correctamente.
+2024-10-16 16:08:50 - INFO - Ingesta completada correctamente.
+2024-10-16 16:09:11 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-16 16:09:11 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:12 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-16 16:09:12 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-16 16:09:12 - INFO - ID de Cine y audiovisuales: 9
+2024-10-16 16:09:12 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:12 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-16 16:09:12 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-16 16:09:12 - ERROR - 'descriptionEs'
+2024-10-16 16:09:12 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:13 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=2 HTTP/11" 200 None
+2024-10-16 16:09:13 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:13 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=3 HTTP/11" 200 None
+2024-10-16 16:09:13 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:13 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=4 HTTP/11" 200 None
+2024-10-16 16:09:14 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:14 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=5 HTTP/11" 200 None
+2024-10-16 16:09:14 - ERROR - 'descriptionEs'
+2024-10-16 16:09:14 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:14 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=6 HTTP/11" 200 None
+2024-10-16 16:09:15 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:15 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=7 HTTP/11" 200 None
+2024-10-16 16:09:15 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:15 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=8 HTTP/11" 200 None
+2024-10-16 16:09:15 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:16 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=9 HTTP/11" 200 None
+2024-10-16 16:09:16 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:16 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=10 HTTP/11" 200 None
+2024-10-16 16:09:16 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:17 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=11 HTTP/11" 200 None
+2024-10-16 16:09:17 - ERROR - 'descriptionEs'
+2024-10-16 16:09:17 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:17 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=12 HTTP/11" 200 None
+2024-10-16 16:09:17 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:17 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=13 HTTP/11" 200 None
+2024-10-16 16:09:18 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:18 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=14 HTTP/11" 200 None
+2024-10-16 16:09:18 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:19 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=15 HTTP/11" 200 None
+2024-10-16 16:09:19 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:19 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=16 HTTP/11" 200 None
+2024-10-16 16:09:19 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:19 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-16 16:09:19 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=17 HTTP/11" 200 None
+2024-10-16 16:09:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-16 16:09:20 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-16 16:09:20 - INFO - ID de Cine y audiovisuales: 9
+2024-10-16 16:09:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-16 16:09:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=18 HTTP/11" 200 None
+2024-10-16 16:09:20 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-16 16:09:20 - ERROR - 'descriptionEs'
+2024-10-16 16:09:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:20 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=19 HTTP/11" 200 None
+2024-10-16 16:09:20 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:21 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=20 HTTP/11" 200 None
+2024-10-16 16:09:21 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:21 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=21 HTTP/11" 200 None
+2024-10-16 16:09:21 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:22 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=22 HTTP/11" 200 None
+2024-10-16 16:09:22 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:22 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=23 HTTP/11" 200 None
+2024-10-16 16:09:22 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:22 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=24 HTTP/11" 200 None
+2024-10-16 16:09:23 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:23 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=25 HTTP/11" 200 None
+2024-10-16 16:09:23 - ERROR - 'descriptionEs'
+2024-10-16 16:09:23 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:23 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=26 HTTP/11" 200 None
+2024-10-16 16:09:23 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:24 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=27 HTTP/11" 200 None
+2024-10-16 16:09:24 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:24 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=28 HTTP/11" 200 None
+2024-10-16 16:09:24 - INFO - ID de Cine y audiovisuales: 14
+2024-10-16 16:09:24 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:24 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14 HTTP/11" 200 None
+2024-10-16 16:09:24 - INFO - Peticion a v1.0/events/byType/14 realizada correctamente.
+2024-10-16 16:09:24 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:09:25 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14?_page=2 HTTP/11" 200 None
+2024-10-16 16:09:25 - INFO - Archivo json generado correctamente.
+2024-10-16 16:09:25 - INFO - Ingesta completada correctamente.
+2024-10-16 16:11:25 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-16 16:11:25 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:11:26 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-16 16:11:26 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-16 16:11:26 - INFO - ID de Cine y audiovisuales: 9
+2024-10-16 16:11:26 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:11:26 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-16 16:11:26 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-16 16:11:26 - CRITICAL - Error inesperado: 'descriptionEs'
+2024-10-16 16:12:47 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024-10-16 16:12:47 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:47 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024-10-16 16:12:47 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024-10-16 16:12:47 - INFO - ID de Cine y audiovisuales: 9
+2024-10-16 16:12:47 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:48 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024-10-16 16:12:48 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024-10-16 16:12:48 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:48 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=2 HTTP/11" 200 None
+2024-10-16 16:12:48 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:49 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=3 HTTP/11" 200 None
+2024-10-16 16:12:49 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:49 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=4 HTTP/11" 200 None
+2024-10-16 16:12:49 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:49 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=5 HTTP/11" 200 None
+2024-10-16 16:12:50 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:50 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=6 HTTP/11" 200 None
+2024-10-16 16:12:50 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:50 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=7 HTTP/11" 200 None
+2024-10-16 16:12:51 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:51 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=8 HTTP/11" 200 None
+2024-10-16 16:12:51 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:51 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=9 HTTP/11" 200 None
+2024-10-16 16:12:51 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:52 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=10 HTTP/11" 200 None
+2024-10-16 16:12:52 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:52 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=11 HTTP/11" 200 None
+2024-10-16 16:12:52 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:53 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=12 HTTP/11" 200 None
+2024-10-16 16:12:53 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:53 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=13 HTTP/11" 200 None
+2024-10-16 16:12:53 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:53 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=14 HTTP/11" 200 None
+2024-10-16 16:12:54 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:54 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=15 HTTP/11" 200 None
+2024-10-16 16:12:54 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:55 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=16 HTTP/11" 200 None
+2024-10-16 16:12:55 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:55 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=17 HTTP/11" 200 None
+2024-10-16 16:12:55 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:56 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=18 HTTP/11" 200 None
+2024-10-16 16:12:56 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:56 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=19 HTTP/11" 200 None
+2024-10-16 16:12:56 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:56 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=20 HTTP/11" 200 None
+2024-10-16 16:12:56 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:57 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=21 HTTP/11" 200 None
+2024-10-16 16:12:57 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:57 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=22 HTTP/11" 200 None
+2024-10-16 16:12:57 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:58 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=23 HTTP/11" 200 None
+2024-10-16 16:12:58 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:58 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=24 HTTP/11" 200 None
+2024-10-16 16:12:58 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:59 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=25 HTTP/11" 200 None
+2024-10-16 16:12:59 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:12:59 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=26 HTTP/11" 200 None
+2024-10-16 16:12:59 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:13:00 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=27 HTTP/11" 200 None
+2024-10-16 16:13:00 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:13:00 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=28 HTTP/11" 200 None
+2024-10-16 16:13:00 - INFO - ID de Cine y audiovisuales: 14
+2024-10-16 16:13:00 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:13:00 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14 HTTP/11" 200 None
+2024-10-16 16:13:00 - INFO - Peticion a v1.0/events/byType/14 realizada correctamente.
+2024-10-16 16:13:00 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024-10-16 16:13:00 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/14?_page=2 HTTP/11" 200 None
+2024-10-16 16:13:05 - INFO - Archivo json generado correctamente.
+2024-10-16 16:13:05 - INFO - Ingesta completada correctamente.
