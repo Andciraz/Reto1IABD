@@ -18,7 +18,7 @@ BASE_PATH = './Data/apis'
 ATTRS = [
     "typeEs", "nameEs", "startDate", "endDate", "publicationDate", "language",
     "openingHoursEs", "sourceNameEs", "sourceUrlEs", "municipalityEs",
-    "establishmentEs", "urlEventEs", "images", "attachment"
+    "establishmentEs", "urlEventEs"
 ]
 
 # Tipos de eventos culturales de los que extraer los datos
@@ -26,32 +26,28 @@ EVENT_TYPES = [
     "Cine y audiovisuales", "Actividad Infantil"
 ]
 
+# Headers para la api de TMDB
 HEADERS = {
     "accept": "application/json",
     "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZjU1MzAyMmE0ZDg2YzA4OWUxZTNiZjgwZmZhNGYyZiIsIm5iZiI6MTcyODQ4ODczOS45NDI4NDQsInN1YiI6IjY3MDZhNDE4NTk3YzEyNmYwN2RkZDZiNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.H874m0N8DVjqDkjAudBq9YEYRKK_KnLAzMMIICHIlkI"
 }
 
 ATTRS_PELICULA = {
-    "id": "id_pelicula",
-    "original_language": "idioma_original",
-    "original_title": "titulo_original", 
-    "popularity": "popularidad",
-    "release_date": "fecha_estreno",
-    "vote_average": "media_votos",
-    "vote_count": "num_votos"
+    "id": "id_pelicula"
 }
 
 logging.basicConfig(
-    filename=f"openData.log",
+    filename=f"Logs/openData.log",
     level = logging.DEBUG,
     format = '%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
+# Sesión que se reutiliza a lo largo del codigo para reutilizar las cookies y agilizar la ejecución
 session = requests.sessions.session()
 
-# Elimina tildes y caracteres especiales del texto que se pasa como parámetro utilizando la libreria unicodedata
 def quitar_tildes(texto):
+    """ Elimina tildes y caracteres especiales del texto que se pasa como parámetro utilizando la libreria unicodedata"""
     # Normalizamos el texto a una forma compatible (NFKD descompone los caracteres acentuados)
     texto_normalizado = unicodedata.normalize('NFKD', texto)
 
@@ -60,9 +56,11 @@ def quitar_tildes(texto):
 
     return texto_sin_tildes
 
-# Llama a la función 'quitar_tildes', pone el texto en minúsculas y elimina los espacios en blanco de los extremos,
-# Se utiliza para las keys de los mapas
 def limpiar_str(texto):
+    """
+    Llama a la función 'quitar_tildes', pone el texto en minúsculas y elimina los espacios en blanco de los extremos,
+    Se utiliza para las keys de los mapas
+    """
     try:
         texto = quitar_tildes(texto)
         texto = texto.strip().lower()
@@ -70,8 +68,10 @@ def limpiar_str(texto):
             logging.critical(f'Error limpiando el string: {texto}, {e}') 
     return texto
 
-# Devuelve un mapeo los elementos obtenidos de la api, además de formatear la descripción de los mismos a un formato no html
 def formatear(item):
+    """"
+    Devuelve un mapeo los elementos obtenidos de la api, además de formatear la descripción de los mismos a un formato no html
+    """
     
     pelicula = {}
 
@@ -131,8 +131,6 @@ def formatear(item):
 
             except Exception as e: 
                 logging.error(f'{e}') #TODO
-
-            pelicula
             
         except Exception as e: 
             logging.error(f'{e}') #TODO
@@ -142,6 +140,9 @@ def formatear(item):
 errores = []
 
 def detalles_peli(evento): 
+    """
+    Busca coincidencias de las peliculas de los eventos con la api de TMDB y le añade al evento la id de la pelicula en caso de que la encuentre
+    """
     logging.debug(f"Entrando a 'detalles_peli({evento["nameEs"]})'")
 
     titulo = evento["nameEs"]
