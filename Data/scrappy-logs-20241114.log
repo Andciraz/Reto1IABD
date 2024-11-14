@@ -8037,3 +8037,519 @@
 2024/11/14 12:06:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Presa&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
 2024/11/14 12:06:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1129598/credits?language=es-ES HTTP/11" 200 None
 2024/11/14 12:06:00 - INFO - SCRAPPEANDO PELICULA Deadpool & Wolverine (2024)
+2024/11/14 12:08:09 - DEBUG - Starting new HTTPS connection (1): www.blogdepelis.top:443
+2024/11/14 12:08:10 - DEBUG - https://www.blogdepelis.top:443 "GET / HTTP/11" 200 None
+2024/11/14 12:08:10 - INFO - RECORRIENDO CATEGORIA Acción
+2024/11/14 12:08:10 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion HTTP/11" 200 None
+2024/11/14 12:08:10 - INFO - COMENZANDO A RECORRER PAGINAS (81) DE LA CATEGORIA Acción
+2024/11/14 12:08:10 - INFO - RECORRIENDO PAGINA 1 DE LA CATEGORIA Acción
+2024/11/14 12:08:11 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/ HTTP/11" 301 None
+2024/11/14 12:08:11 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion HTTP/11" 200 None
+2024/11/14 12:08:11 - INFO - SCRAPPEANDO PELICULA Libre (2024)
+2024/11/14 12:08:12 - DEBUG - https://www.blogdepelis.top:443 "GET /libre.html HTTP/11" 200 None
+2024/11/14 12:08:12 - INFO - PELICULA AÑADIDA Libre (2024)
+2024/11/14 12:08:12 - DEBUG - Starting new HTTPS connection (1): api.themoviedb.org:443
+2024/11/14 12:08:12 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Libre&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:12 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1142518/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:12 - INFO - SCRAPPEANDO PELICULA Pokémon x siempre: Celebi, la voz del bosque (2001)
+2024/11/14 12:08:13 - DEBUG - https://www.blogdepelis.top:443 "GET /pokemon-x-siempre-celebi-la-voz-del-bosque.html HTTP/11" 200 None
+2024/11/14 12:08:13 - INFO - PELICULA AÑADIDA Pokémon x siempre: Celebi, la voz del bosque (2001)
+2024/11/14 12:08:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Pok%C3%A9mon%20x%20siempre:%20Celebi,%20la%20voz%20del%20bosque&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/12600/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:13 - INFO - SCRAPPEANDO PELICULA Pokémon 3: El hechizo de los Unown (2000)
+2024/11/14 12:08:14 - DEBUG - https://www.blogdepelis.top:443 "GET /pokemon-3-el-hechizo-de-los-unown.html HTTP/11" 200 None
+2024/11/14 12:08:14 - INFO - PELICULA AÑADIDA Pokémon 3: El hechizo de los Unown (2000)
+2024/11/14 12:08:14 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Pok%C3%A9mon%203:%20El%20hechizo%20de%20los%20Unown&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:14 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/10991/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:14 - INFO - SCRAPPEANDO PELICULA Canario negro (2024)
+2024/11/14 12:08:15 - DEBUG - https://www.blogdepelis.top:443 "GET /canario-negro.html HTTP/11" 200 None
+2024/11/14 12:08:15 - INFO - PELICULA AÑADIDA Canario negro (2024)
+2024/11/14 12:08:15 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Canario%20negro&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:15 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/976734/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:15 - INFO - SCRAPPEANDO PELICULA Pokémon 2000: El Poder de Uno (1999)
+2024/11/14 12:08:16 - DEBUG - https://www.blogdepelis.top:443 "GET /pokemon-2000-el-poder-de-uno.html HTTP/11" 200 None
+2024/11/14 12:08:16 - INFO - PELICULA AÑADIDA Pokémon 2000: El Poder de Uno (1999)
+2024/11/14 12:08:16 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Pok%C3%A9mon%202000:%20El%20Poder%20de%20Uno&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:16 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/12599/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:16 - INFO - SCRAPPEANDO PELICULA Transformers Uno (2024)
+2024/11/14 12:08:17 - DEBUG - https://www.blogdepelis.top:443 "GET /transformers-uno.html HTTP/11" 200 None
+2024/11/14 12:08:17 - INFO - PELICULA AÑADIDA Transformers Uno (2024)
+2024/11/14 12:08:17 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Transformers%20Uno&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:17 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/667538/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:17 - INFO - SCRAPPEANDO PELICULA Fuera de las sombras (2024)
+2024/11/14 12:08:18 - DEBUG - https://www.blogdepelis.top:443 "GET /fuera-de-las-sombras.html HTTP/11" 200 None
+2024/11/14 12:08:18 - INFO - PELICULA AÑADIDA Fuera de las sombras (2024)
+2024/11/14 12:08:18 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Fuera%20de%20las%20sombras&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:18 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1151949/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:18 - INFO - SCRAPPEANDO PELICULA Hermanos (2024)
+2024/11/14 12:08:19 - DEBUG - https://www.blogdepelis.top:443 "GET /hermanos.html HTTP/11" 200 None
+2024/11/14 12:08:19 - INFO - PELICULA AÑADIDA Hermanos (2024)
+2024/11/14 12:08:19 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Hermanos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:20 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/616446/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:20 - INFO - SCRAPPEANDO PELICULA Hellboy: The Crooked Man (2024)
+2024/11/14 12:08:20 - DEBUG - https://www.blogdepelis.top:443 "GET /hellboy-the-crooked-man.html HTTP/11" 200 None
+2024/11/14 12:08:21 - INFO - PELICULA AÑADIDA Hellboy: The Crooked Man (2024)
+2024/11/14 12:08:21 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Hellboy:%20The%20Crooked%20Man&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:21 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1087822/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:21 - INFO - SCRAPPEANDO PELICULA Los tipos malos: ¿Truco o atraco? (2024)
+2024/11/14 12:08:22 - DEBUG - https://www.blogdepelis.top:443 "GET /los-tipos-malos-truco-o-atraco.html HTTP/11" 200 None
+2024/11/14 12:08:22 - INFO - PELICULA AÑADIDA Los tipos malos: ¿Truco o atraco? (2024)
+2024/11/14 12:08:22 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Los%20tipos%20malos:%20%C2%BFTruco%20o%20atraco?&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:22 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1329336/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:22 - INFO - SCRAPPEANDO PELICULA Problemas… (2024)
+2024/11/14 12:08:23 - DEBUG - https://www.blogdepelis.top:443 "GET /problemas.html HTTP/11" 200 None
+2024/11/14 12:08:23 - INFO - PELICULA AÑADIDA Problemas… (2024)
+2024/11/14 12:08:23 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Problemas%E2%80%A6&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:23 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1210794/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:23 - INFO - SCRAPPEANDO PELICULA Elektra (2005)
+2024/11/14 12:08:24 - DEBUG - https://www.blogdepelis.top:443 "GET /elektra.html HTTP/11" 200 None
+2024/11/14 12:08:24 - INFO - PELICULA AÑADIDA Elektra (2005)
+2024/11/14 12:08:24 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Elektra&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:24 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/9947/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:24 - INFO - RECORRIENDO PAGINA 2 DE LA CATEGORIA Acción
+2024/11/14 12:08:24 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/page/2 HTTP/11" 200 None
+2024/11/14 12:08:24 - INFO - SCRAPPEANDO PELICULA Gatúbela (2004)
+2024/11/14 12:08:25 - DEBUG - https://www.blogdepelis.top:443 "GET /gatubela.html HTTP/11" 200 None
+2024/11/14 12:08:25 - INFO - PELICULA AÑADIDA Gatúbela (2004)
+2024/11/14 12:08:25 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Gat%C3%BAbela&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:25 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/862491/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:25 - INFO - SCRAPPEANDO PELICULA Miedo profundo (2016)
+2024/11/14 12:08:26 - DEBUG - https://www.blogdepelis.top:443 "GET /miedo-profundo.html HTTP/11" 200 None
+2024/11/14 12:08:26 - INFO - PELICULA AÑADIDA Miedo profundo (2016)
+2024/11/14 12:08:26 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Miedo%20profundo&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:26 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/899445/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:26 - INFO - SCRAPPEANDO PELICULA Watchmen: Capítulo 1 (2024)
+2024/11/14 12:08:27 - DEBUG - https://www.blogdepelis.top:443 "GET /watchmen-capitulo-1.html HTTP/11" 200 None
+2024/11/14 12:08:27 - INFO - PELICULA AÑADIDA Watchmen: Capítulo 1 (2024)
+2024/11/14 12:08:27 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Watchmen:%20Cap%C3%ADtulo%201&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:27 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1155058/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:27 - INFO - SCRAPPEANDO PELICULA Agatha en todas partes – Temporada 1 (2024)
+2024/11/14 12:08:29 - DEBUG - https://www.blogdepelis.top:443 "GET /agatha-en-todas-partes-temporada-1.html HTTP/11" 200 None
+2024/11/14 12:08:29 - INFO - PELICULA AÑADIDA Agatha en todas partes – Temporada 1 (2024)
+2024/11/14 12:08:29 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Agatha%20en%20todas%20partes&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:29 - CRITICAL - NO SE HA ENCONTRADO Agatha en todas partes
+2024/11/14 12:08:29 - INFO - SCRAPPEANDO PELICULA Los feos (2024)
+2024/11/14 12:08:30 - DEBUG - https://www.blogdepelis.top:443 "GET /los-feos.html HTTP/11" 200 None
+2024/11/14 12:08:30 - INFO - PELICULA AÑADIDA Los feos (2024)
+2024/11/14 12:08:30 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Los%20feos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:30 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/748167/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:30 - INFO - SCRAPPEANDO PELICULA El cuervo (2024)
+2024/11/14 12:08:32 - DEBUG - https://www.blogdepelis.top:443 "GET /el-cuervo-2024.html HTTP/11" 200 None
+2024/11/14 12:08:32 - INFO - PELICULA AÑADIDA El cuervo (2024)
+2024/11/14 12:08:32 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20cuervo&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:32 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/957452/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:32 - INFO - SCRAPPEANDO PELICULA El Señor de los Anillos: Los anillos de poder – Temporada 2 (2024)
+2024/11/14 12:08:33 - DEBUG - https://www.blogdepelis.top:443 "GET /el-senor-de-los-anillos-los-anillos-de-poder-temporada-2.html HTTP/11" 200 None
+2024/11/14 12:08:33 - INFO - PELICULA AÑADIDA El Señor de los Anillos: Los anillos de poder – Temporada 2 (2024)
+2024/11/14 12:08:33 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20Se%C3%B1or%20de%20los%20Anillos:%20Los%20anillos%20de%20poder&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:33 - CRITICAL - NO SE HA ENCONTRADO El Señor de los Anillos: Los anillos de poder
+2024/11/14 12:08:33 - INFO - SCRAPPEANDO PELICULA Borderlands (2024)
+2024/11/14 12:08:34 - DEBUG - https://www.blogdepelis.top:443 "GET /borderlands.html HTTP/11" 200 None
+2024/11/14 12:08:34 - INFO - PELICULA AÑADIDA Borderlands (2024)
+2024/11/14 12:08:34 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Borderlands&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:34 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/365177/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:34 - INFO - SCRAPPEANDO PELICULA The Killer (2024)
+2024/11/14 12:08:35 - DEBUG - https://www.blogdepelis.top:443 "GET /the-killer.html HTTP/11" 200 None
+2024/11/14 12:08:35 - INFO - PELICULA AÑADIDA The Killer (2024)
+2024/11/14 12:08:35 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=The%20Killer&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:35 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/970347/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:35 - INFO - SCRAPPEANDO PELICULA Pretty Guardian Sailor Moon Cosmos: La película – Parte 1 (2024)
+2024/11/14 12:08:36 - DEBUG - https://www.blogdepelis.top:443 "GET /pretty-guardian-sailor-moon-cosmos-la-pelicula-parte-1.html HTTP/11" 200 None
+2024/11/14 12:08:36 - INFO - PELICULA AÑADIDA Pretty Guardian Sailor Moon Cosmos: La película – Parte 1 (2024)
+2024/11/14 12:08:36 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Pretty%20Guardian%20Sailor%20Moon%20Cosmos:%20La%20pel%C3%ADcula%20%E2%80%93%20Parte%201&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:36 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/968870/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:36 - INFO - SCRAPPEANDO PELICULA Jackpot: Lotería mortal (2024)
+2024/11/14 12:08:37 - DEBUG - https://www.blogdepelis.top:443 "GET /jackpot-loteria-mortal.html HTTP/11" 200 None
+2024/11/14 12:08:37 - INFO - PELICULA AÑADIDA Jackpot: Lotería mortal (2024)
+2024/11/14 12:08:37 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Jackpot:%20Loter%C3%ADa%20mortal&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:37 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1094138/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:37 - INFO - SCRAPPEANDO PELICULA El sindicato (2024)
+2024/11/14 12:08:40 - DEBUG - https://www.blogdepelis.top:443 "GET /el-sindicato.html HTTP/11" 200 None
+2024/11/14 12:08:41 - INFO - PELICULA AÑADIDA El sindicato (2024)
+2024/11/14 12:08:41 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20sindicato&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:41 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/704239/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:41 - INFO - RECORRIENDO PAGINA 3 DE LA CATEGORIA Acción
+2024/11/14 12:08:41 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/page/3 HTTP/11" 200 None
+2024/11/14 12:08:41 - INFO - SCRAPPEANDO PELICULA Tornados (2024)
+2024/11/14 12:08:42 - DEBUG - https://www.blogdepelis.top:443 "GET /tornados.html HTTP/11" 200 None
+2024/11/14 12:08:42 - INFO - PELICULA AÑADIDA Tornados (2024)
+2024/11/14 12:08:42 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Tornados&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:42 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/34559/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:42 - INFO - SCRAPPEANDO PELICULA Presa (2024)
+2024/11/14 12:08:43 - DEBUG - https://www.blogdepelis.top:443 "GET /presa.html HTTP/11" 200 None
+2024/11/14 12:08:43 - INFO - PELICULA AÑADIDA Presa (2024)
+2024/11/14 12:08:43 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Presa&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:43 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1129598/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:43 - INFO - SCRAPPEANDO PELICULA Deadpool & Wolverine (2024)
+2024/11/14 12:08:45 - DEBUG - https://www.blogdepelis.top:443 "GET /deadpool-wolverine.html HTTP/11" 200 None
+2024/11/14 12:08:45 - INFO - PELICULA AÑADIDA Deadpool & Wolverine (2024)
+2024/11/14 12:08:45 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Deadpool%20&%20Wolverine&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:45 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/533535/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:45 - INFO - SCRAPPEANDO PELICULA Skywalkers: Una historia de amor (2024)
+2024/11/14 12:08:47 - DEBUG - https://www.blogdepelis.top:443 "GET /skywalkers-una-historia-de-amor.html HTTP/11" 200 None
+2024/11/14 12:08:47 - INFO - PELICULA AÑADIDA Skywalkers: Una historia de amor (2024)
+2024/11/14 12:08:47 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Skywalkers:%20Una%20historia%20de%20amor&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:47 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1214488/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:47 - INFO - SCRAPPEANDO PELICULA Grandes espías: Misión Italia (2024)
+2024/11/14 12:08:48 - DEBUG - https://www.blogdepelis.top:443 "GET /grandes-espias-mision-italia.html HTTP/11" 200 None
+2024/11/14 12:08:48 - INFO - PELICULA AÑADIDA Grandes espías: Misión Italia (2024)
+2024/11/14 12:08:48 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Grandes%20esp%C3%ADas:%20Misi%C3%B3n%20Italia&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:48 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1048241/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:48 - INFO - SCRAPPEANDO PELICULA Liga de la Justicia: Crisis en tierras infinitas – Parte 3 (2024)
+2024/11/14 12:08:49 - DEBUG - https://www.blogdepelis.top:443 "GET /liga-de-la-justicia-crisis-en-tierras-infinitas-parte-3.html HTTP/11" 200 None
+2024/11/14 12:08:49 - INFO - PELICULA AÑADIDA Liga de la Justicia: Crisis en tierras infinitas – Parte 3 (2024)
+2024/11/14 12:08:49 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Liga%20de%20la%20Justicia:%20Crisis%20en%20tierras%20infinitas%20%E2%80%93%20Parte%203&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:49 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1209290/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:49 - INFO - SCRAPPEANDO PELICULA Liga de la Justicia: Crisis en tierras infinitas – Parte 2 (2024)
+2024/11/14 12:08:50 - DEBUG - https://www.blogdepelis.top:443 "GET /liga-de-la-justicia-crisis-en-tierras-infinitas-parte-2.html HTTP/11" 200 None
+2024/11/14 12:08:50 - INFO - PELICULA AÑADIDA Liga de la Justicia: Crisis en tierras infinitas – Parte 2 (2024)
+2024/11/14 12:08:50 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Liga%20de%20la%20Justicia:%20Crisis%20en%20tierras%20infinitas%20%E2%80%93%20Parte%202&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:50 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1209288/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:50 - INFO - SCRAPPEANDO PELICULA El último samurái (2003)
+2024/11/14 12:08:51 - DEBUG - https://www.blogdepelis.top:443 "GET /el-ultimo-samurai.html HTTP/11" 200 None
+2024/11/14 12:08:51 - INFO - PELICULA AÑADIDA El último samurái (2003)
+2024/11/14 12:08:51 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20%C3%BAltimo%20samur%C3%A1i&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:51 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/616/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:51 - INFO - SCRAPPEANDO PELICULA Descendientes: El ascenso de Red (2024)
+2024/11/14 12:08:52 - DEBUG - https://www.blogdepelis.top:443 "GET /descendientes-el-ascenso-de-red.html HTTP/11" 200 None
+2024/11/14 12:08:52 - INFO - PELICULA AÑADIDA Descendientes: El ascenso de Red (2024)
+2024/11/14 12:08:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Descendientes:%20El%20ascenso%20de%20Red&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/974262/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:53 - INFO - SCRAPPEANDO PELICULA Juego de Tronos – Temporada 8 (2019)
+2024/11/14 12:08:54 - DEBUG - https://www.blogdepelis.top:443 "GET /juego-de-tronos-temporada-8.html HTTP/11" 200 None
+2024/11/14 12:08:54 - INFO - PELICULA AÑADIDA Juego de Tronos – Temporada 8 (2019)
+2024/11/14 12:08:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Juego%20de%20Tronos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/492606/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:54 - INFO - SCRAPPEANDO PELICULA Juego de Tronos – Temporada 7 (2017)
+2024/11/14 12:08:55 - DEBUG - https://www.blogdepelis.top:443 "GET /juego-de-tronos-temporada-7.html HTTP/11" 200 None
+2024/11/14 12:08:55 - INFO - PELICULA AÑADIDA Juego de Tronos – Temporada 7 (2017)
+2024/11/14 12:08:55 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Juego%20de%20Tronos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:55 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/492606/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:55 - INFO - SCRAPPEANDO PELICULA Juego de Tronos – Temporada 6 (2016)
+2024/11/14 12:08:56 - DEBUG - https://www.blogdepelis.top:443 "GET /juego-de-tronos-temporada-6.html HTTP/11" 200 None
+2024/11/14 12:08:56 - INFO - PELICULA AÑADIDA Juego de Tronos – Temporada 6 (2016)
+2024/11/14 12:08:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Juego%20de%20Tronos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/492606/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:56 - INFO - RECORRIENDO PAGINA 4 DE LA CATEGORIA Acción
+2024/11/14 12:08:56 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/page/4 HTTP/11" 200 None
+2024/11/14 12:08:56 - INFO - SCRAPPEANDO PELICULA Juego de Tronos – Temporada 5 (2015)
+2024/11/14 12:08:57 - DEBUG - https://www.blogdepelis.top:443 "GET /juego-de-tronos-temporada-5.html HTTP/11" 200 None
+2024/11/14 12:08:57 - INFO - PELICULA AÑADIDA Juego de Tronos – Temporada 5 (2015)
+2024/11/14 12:08:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Juego%20de%20Tronos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/492606/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:57 - INFO - SCRAPPEANDO PELICULA Juego de Tronos – Temporada 4 (2014)
+2024/11/14 12:08:58 - DEBUG - https://www.blogdepelis.top:443 "GET /juego-de-tronos-temporada-4.html HTTP/11" 200 None
+2024/11/14 12:08:58 - INFO - PELICULA AÑADIDA Juego de Tronos – Temporada 4 (2014)
+2024/11/14 12:08:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Juego%20de%20Tronos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/492606/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:58 - INFO - SCRAPPEANDO PELICULA Juego de Tronos – Temporada 3 (2013)
+2024/11/14 12:08:59 - DEBUG - https://www.blogdepelis.top:443 "GET /juego-de-tronos-temporada-3.html HTTP/11" 200 None
+2024/11/14 12:08:59 - INFO - PELICULA AÑADIDA Juego de Tronos – Temporada 3 (2013)
+2024/11/14 12:08:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Juego%20de%20Tronos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:08:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/492606/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:08:59 - INFO - SCRAPPEANDO PELICULA Juego de Tronos – Temporada 2 (2012)
+2024/11/14 12:09:00 - DEBUG - https://www.blogdepelis.top:443 "GET /juego-de-tronos-temporada-2.html HTTP/11" 200 None
+2024/11/14 12:09:00 - INFO - PELICULA AÑADIDA Juego de Tronos – Temporada 2 (2012)
+2024/11/14 12:09:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Juego%20de%20Tronos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/492606/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:00 - INFO - SCRAPPEANDO PELICULA Juego de Tronos – Temporada 1 (2011)
+2024/11/14 12:09:01 - DEBUG - https://www.blogdepelis.top:443 "GET /juego-de-tronos-temporada-1.html HTTP/11" 200 None
+2024/11/14 12:09:01 - INFO - PELICULA AÑADIDA Juego de Tronos – Temporada 1 (2011)
+2024/11/14 12:09:01 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Juego%20de%20Tronos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:01 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/492606/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:01 - INFO - SCRAPPEANDO PELICULA Un detective suelto en Hollywood: Axel F. (2024)
+2024/11/14 12:09:02 - DEBUG - https://www.blogdepelis.top:443 "GET /un-detective-suelto-en-hollywood-axel-f.html HTTP/11" 200 None
+2024/11/14 12:09:02 - INFO - PELICULA AÑADIDA Un detective suelto en Hollywood: Axel F. (2024)
+2024/11/14 12:09:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Un%20detective%20suelto%20en%20Hollywood:%20Axel%20F.&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/280180/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:02 - INFO - SCRAPPEANDO PELICULA El planeta de los simios: Nuevo reino (2024)
+2024/11/14 12:09:03 - DEBUG - https://www.blogdepelis.top:443 "GET /el-planeta-de-los-simios-nuevo-reino.html HTTP/11" 200 None
+2024/11/14 12:09:03 - INFO - PELICULA AÑADIDA El planeta de los simios: Nuevo reino (2024)
+2024/11/14 12:09:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20planeta%20de%20los%20simios:%20Nuevo%20reino&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/653346/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:03 - INFO - SCRAPPEANDO PELICULA Bad Boys: Hasta la muerte (2024)
+2024/11/14 12:09:04 - DEBUG - https://www.blogdepelis.top:443 "GET /bad-boys-hasta-la-muerte.html HTTP/11" 200 None
+2024/11/14 12:09:04 - INFO - PELICULA AÑADIDA Bad Boys: Hasta la muerte (2024)
+2024/11/14 12:09:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Bad%20Boys:%20Hasta%20la%20muerte&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/573435/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:04 - INFO - SCRAPPEANDO PELICULA Thor: Dios del trueno (2022)
+2024/11/14 12:09:05 - DEBUG - https://www.blogdepelis.top:443 "GET /thor-dios-del-trueno.html HTTP/11" 200 None
+2024/11/14 12:09:05 - INFO - PELICULA AÑADIDA Thor: Dios del trueno (2022)
+2024/11/14 12:09:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Thor:%20Dios%20del%20trueno&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/990593/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:05 - INFO - SCRAPPEANDO PELICULA Furiosa: de la saga Mad Max (2024)
+2024/11/14 12:09:06 - DEBUG - https://www.blogdepelis.top:443 "GET /furiosa-de-la-saga-mad-max.html HTTP/11" 200 None
+2024/11/14 12:09:06 - INFO - PELICULA AÑADIDA Furiosa: de la saga Mad Max (2024)
+2024/11/14 12:09:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Furiosa:%20de%20la%20saga%20Mad%20Max&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/786892/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:06 - INFO - SCRAPPEANDO PELICULA Monkey Man: El despertar de la bestia (2024)
+2024/11/14 12:09:07 - DEBUG - https://www.blogdepelis.top:443 "GET /monkey-man-el-despertar-de-la-bestia.html HTTP/11" 200 None
+2024/11/14 12:09:07 - INFO - PELICULA AÑADIDA Monkey Man: El despertar de la bestia (2024)
+2024/11/14 12:09:07 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Monkey%20Man:%20El%20despertar%20de%20la%20bestia&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:07 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/560016/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:07 - INFO - SCRAPPEANDO PELICULA Emboscada (2023)
+2024/11/14 12:09:08 - DEBUG - https://www.blogdepelis.top:443 "GET /emboscada.html HTTP/11" 200 None
+2024/11/14 12:09:08 - INFO - PELICULA AÑADIDA Emboscada (2023)
+2024/11/14 12:09:08 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Emboscada&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:08 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/817120/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:08 - INFO - RECORRIENDO PAGINA 5 DE LA CATEGORIA Acción
+2024/11/14 12:09:08 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/page/5 HTTP/11" 200 None
+2024/11/14 12:09:08 - INFO - SCRAPPEANDO PELICULA Star Trek: Sin límites (2016)
+2024/11/14 12:09:09 - DEBUG - https://www.blogdepelis.top:443 "GET /star-trek-sin-limites.html HTTP/11" 200 None
+2024/11/14 12:09:09 - INFO - PELICULA AÑADIDA Star Trek: Sin límites (2016)
+2024/11/14 12:09:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Star%20Trek:%20Sin%20l%C3%ADmites&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/188927/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:09 - INFO - SCRAPPEANDO PELICULA Star Trek: En la oscuridad (2013)
+2024/11/14 12:09:10 - DEBUG - https://www.blogdepelis.top:443 "GET /star-trek-en-la-oscuridad.html HTTP/11" 200 None
+2024/11/14 12:09:10 - INFO - PELICULA AÑADIDA Star Trek: En la oscuridad (2013)
+2024/11/14 12:09:10 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Star%20Trek:%20En%20la%20oscuridad&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:10 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/54138/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:10 - INFO - SCRAPPEANDO PELICULA Star Trek (2009)
+2024/11/14 12:09:11 - DEBUG - https://www.blogdepelis.top:443 "GET /star-trek.html HTTP/11" 200 None
+2024/11/14 12:09:11 - INFO - PELICULA AÑADIDA Star Trek (2009)
+2024/11/14 12:09:11 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Star%20Trek&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:11 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/13475/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:11 - INFO - SCRAPPEANDO PELICULA The Boys – Temporada 4 (2024)
+2024/11/14 12:09:13 - DEBUG - https://www.blogdepelis.top:443 "GET /the-boys-temporada-4.html HTTP/11" 200 None
+2024/11/14 12:09:13 - INFO - PELICULA AÑADIDA The Boys – Temporada 4 (2024)
+2024/11/14 12:09:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=The%20Boys&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/13821/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:13 - INFO - SCRAPPEANDO PELICULA What If…? – Temporada 2 (2023)
+2024/11/14 12:09:14 - DEBUG - https://www.blogdepelis.top:443 "GET /what-if-temporada-2.html HTTP/11" 200 None
+2024/11/14 12:09:14 - INFO - PELICULA AÑADIDA What If…? – Temporada 2 (2023)
+2024/11/14 12:09:14 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=What%20If%E2%80%A6?&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:14 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/601905/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:14 - INFO - SCRAPPEANDO PELICULA La casa del dragón – Temporada 2 (2024)
+2024/11/14 12:09:16 - DEBUG - https://www.blogdepelis.top:443 "GET /la-casa-del-dragon-temporada-2.html HTTP/11" 200 None
+2024/11/14 12:09:16 - INFO - PELICULA AÑADIDA La casa del dragón – Temporada 2 (2024)
+2024/11/14 12:09:16 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=La%20casa%20del%20drag%C3%B3n&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:16 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/638507/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:16 - INFO - SCRAPPEANDO PELICULA Ultraman: El ascenso (2024)
+2024/11/14 12:09:17 - DEBUG - https://www.blogdepelis.top:443 "GET /ultraman-el-ascenso.html HTTP/11" 200 None
+2024/11/14 12:09:17 - INFO - PELICULA AÑADIDA Ultraman: El ascenso (2024)
+2024/11/14 12:09:17 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Ultraman:%20El%20ascenso&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:17 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/829402/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:17 - INFO - SCRAPPEANDO PELICULA MR-9: Misión mortal (2023)
+2024/11/14 12:09:17 - DEBUG - https://www.blogdepelis.top:443 "GET /mr-9-mision-mortal.html HTTP/11" 200 None
+2024/11/14 12:09:17 - INFO - PELICULA AÑADIDA MR-9: Misión mortal (2023)
+2024/11/14 12:09:17 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=MR-9:%20Misi%C3%B3n%20mortal&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:17 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1016346/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:17 - INFO - SCRAPPEANDO PELICULA En tierra de santos y pecadores (2023)
+2024/11/14 12:09:20 - DEBUG - https://www.blogdepelis.top:443 "GET /en-tierra-de-santos-y-pecadores.html HTTP/11" 200 None
+2024/11/14 12:09:20 - INFO - PELICULA AÑADIDA En tierra de santos y pecadores (2023)
+2024/11/14 12:09:20 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=En%20tierra%20de%20santos%20y%20pecadores&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:20 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1027073/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:20 - INFO - SCRAPPEANDO PELICULA Cómplices del engaño (2023)
+2024/11/14 12:09:21 - DEBUG - https://www.blogdepelis.top:443 "GET /complices-del-engano.html HTTP/11" 200 None
+2024/11/14 12:09:21 - INFO - PELICULA AÑADIDA Cómplices del engaño (2023)
+2024/11/14 12:09:21 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=C%C3%B3mplices%20del%20enga%C3%B1o&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:21 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/974635/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:21 - INFO - SCRAPPEANDO PELICULA Baki Hanma vs Kengan Ashura (2024)
+2024/11/14 12:09:22 - DEBUG - https://www.blogdepelis.top:443 "GET /baki-hanma-vs-kengan-ashura.html HTTP/11" 200 None
+2024/11/14 12:09:22 - INFO - PELICULA AÑADIDA Baki Hanma vs Kengan Ashura (2024)
+2024/11/14 12:09:22 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Baki%20Hanma%20vs%20Kengan%20Ashura&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:22 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1263421/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:22 - INFO - SCRAPPEANDO PELICULA En las profundidades del Sena (2024)
+2024/11/14 12:09:23 - DEBUG - https://www.blogdepelis.top:443 "GET /en-las-profundidades-del-sena.html HTTP/11" 200 None
+2024/11/14 12:09:23 - INFO - PELICULA AÑADIDA En las profundidades del Sena (2024)
+2024/11/14 12:09:23 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=En%20las%20profundidades%20del%20Sena&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:23 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1001311/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:23 - INFO - RECORRIENDO PAGINA 6 DE LA CATEGORIA Acción
+2024/11/14 12:09:23 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/page/6 HTTP/11" 200 None
+2024/11/14 12:09:23 - INFO - SCRAPPEANDO PELICULA En la mira del francotirador (2017)
+2024/11/14 12:09:24 - DEBUG - https://www.blogdepelis.top:443 "GET /en-la-mira-del-francotirador.html HTTP/11" 200 None
+2024/11/14 12:09:24 - INFO - PELICULA AÑADIDA En la mira del francotirador (2017)
+2024/11/14 12:09:24 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=En%20la%20mira%20del%20francotirador&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:24 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/405775/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:24 - INFO - SCRAPPEANDO PELICULA El agente de C.I.P.O.L. (2015)
+2024/11/14 12:09:25 - DEBUG - https://www.blogdepelis.top:443 "GET /el-agente-de-c-i-p-o-l.html HTTP/11" 200 None
+2024/11/14 12:09:25 - INFO - PELICULA AÑADIDA El agente de C.I.P.O.L. (2015)
+2024/11/14 12:09:25 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20agente%20de%20C.I.P.O.L.&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:25 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/203801/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:25 - INFO - SCRAPPEANDO PELICULA El sexto día (2000)
+2024/11/14 12:09:26 - DEBUG - https://www.blogdepelis.top:443 "GET /el-sexto-dia.html HTTP/11" 200 None
+2024/11/14 12:09:26 - INFO - PELICULA AÑADIDA El sexto día (2000)
+2024/11/14 12:09:26 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20sexto%20d%C3%ADa&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:26 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/8452/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:26 - INFO - SCRAPPEANDO PELICULA Kali (2024)
+2024/11/14 12:09:28 - DEBUG - https://www.blogdepelis.top:443 "GET /kali.html HTTP/11" 200 None
+2024/11/14 12:09:28 - INFO - PELICULA AÑADIDA Kali (2024)
+2024/11/14 12:09:28 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Kali&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:28 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/81160/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:28 - INFO - SCRAPPEANDO PELICULA Guerra civil (2024)
+2024/11/14 12:09:28 - DEBUG - https://www.blogdepelis.top:443 "GET /guerra-civil.html HTTP/11" 200 None
+2024/11/14 12:09:28 - INFO - PELICULA AÑADIDA Guerra civil (2024)
+2024/11/14 12:09:29 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Guerra%20civil&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:29 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/188428/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:29 - INFO - SCRAPPEANDO PELICULA Atlas (2024)
+2024/11/14 12:09:30 - DEBUG - https://www.blogdepelis.top:443 "GET /atlas.html HTTP/11" 200 None
+2024/11/14 12:09:30 - INFO - PELICULA AÑADIDA Atlas (2024)
+2024/11/14 12:09:30 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Atlas&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:30 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/614933/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:30 - INFO - SCRAPPEANDO PELICULA El bastardo (2023)
+2024/11/14 12:09:30 - DEBUG - https://www.blogdepelis.top:443 "GET /el-bastardo.html HTTP/11" 200 None
+2024/11/14 12:09:30 - INFO - PELICULA AÑADIDA El bastardo (2023)
+2024/11/14 12:09:30 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20bastardo&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:30 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1057001/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:30 - INFO - SCRAPPEANDO PELICULA Contra todos (2024)
+2024/11/14 12:09:31 - DEBUG - https://www.blogdepelis.top:443 "GET /contra-todos.html HTTP/11" 200 None
+2024/11/14 12:09:31 - INFO - PELICULA AÑADIDA Contra todos (2024)
+2024/11/14 12:09:31 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Contra%20todos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:31 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/157366/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:31 - INFO - SCRAPPEANDO PELICULA Guerra sin reglas (2024)
+2024/11/14 12:09:32 - DEBUG - https://www.blogdepelis.top:443 "GET /guerra-sin-reglas.html HTTP/11" 200 None
+2024/11/14 12:09:32 - INFO - PELICULA AÑADIDA Guerra sin reglas (2024)
+2024/11/14 12:09:32 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Guerra%20sin%20reglas&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:32 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/799583/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:32 - INFO - SCRAPPEANDO PELICULA Profesión peligro (2024)
+2024/11/14 12:09:33 - DEBUG - https://www.blogdepelis.top:443 "GET /profesion-peligro.html HTTP/11" 200 None
+2024/11/14 12:09:33 - INFO - PELICULA AÑADIDA Profesión peligro (2024)
+2024/11/14 12:09:33 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Profesi%C3%B3n%20peligro&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:33 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/746036/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:33 - INFO - SCRAPPEANDO PELICULA Godzilla y Kong: El nuevo imperio (2024)
+2024/11/14 12:09:34 - DEBUG - https://www.blogdepelis.top:443 "GET /godzilla-y-kong-el-nuevo-imperio.html HTTP/11" 200 None
+2024/11/14 12:09:34 - INFO - PELICULA AÑADIDA Godzilla y Kong: El nuevo imperio (2024)
+2024/11/14 12:09:34 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Godzilla%20y%20Kong:%20El%20nuevo%20imperio&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:34 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/823464/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:34 - INFO - SCRAPPEANDO PELICULA Amor, mentiras y sangre (2024)
+2024/11/14 12:09:36 - DEBUG - https://www.blogdepelis.top:443 "GET /amor-mentiras-y-sangre.html HTTP/11" 200 None
+2024/11/14 12:09:36 - INFO - PELICULA AÑADIDA Amor, mentiras y sangre (2024)
+2024/11/14 12:09:36 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Amor,%20mentiras%20y%20sangre&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:36 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/948549/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:36 - INFO - RECORRIENDO PAGINA 7 DE LA CATEGORIA Acción
+2024/11/14 12:09:36 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/page/7 HTTP/11" 200 None
+2024/11/14 12:09:36 - INFO - SCRAPPEANDO PELICULA Godzilla: Minus One (2023)
+2024/11/14 12:09:37 - DEBUG - https://www.blogdepelis.top:443 "GET /godzilla-minus-one.html HTTP/11" 200 None
+2024/11/14 12:09:37 - INFO - PELICULA AÑADIDA Godzilla: Minus One (2023)
+2024/11/14 12:09:37 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Godzilla:%20Minus%20One&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:37 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/940721/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:37 - INFO - SCRAPPEANDO PELICULA Miraculous World París: Las aventuras de Shadybug y Claw Noir (2023)
+2024/11/14 12:09:39 - DEBUG - https://www.blogdepelis.top:443 "GET /miraculous-world-paris-las-aventuras-de-shadybug-y-claw-noir.html HTTP/11" 200 None
+2024/11/14 12:09:39 - INFO - PELICULA AÑADIDA Miraculous World París: Las aventuras de Shadybug y Claw Noir (2023)
+2024/11/14 12:09:39 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Miraculous%20World%20Par%C3%ADs:%20Las%20aventuras%20de%20Shadybug%20y%20Claw%20Noir&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:39 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1147400/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:39 - INFO - SCRAPPEANDO PELICULA Fallout – Temporada 1 (2024)
+2024/11/14 12:09:40 - DEBUG - https://www.blogdepelis.top:443 "GET /fallout-temporada-1.html HTTP/11" 200 None
+2024/11/14 12:09:40 - INFO - PELICULA AÑADIDA Fallout – Temporada 1 (2024)
+2024/11/14 12:09:40 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Fallout&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:40 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/392499/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:40 - INFO - SCRAPPEANDO PELICULA Rebel Moon – Parte 2: La guerrera que deja marca (2024)
+2024/11/14 12:09:41 - DEBUG - https://www.blogdepelis.top:443 "GET /rebel-moon-parte-2-la-guerrera-que-deja-marca.html HTTP/11" 200 None
+2024/11/14 12:09:41 - INFO - PELICULA AÑADIDA Rebel Moon – Parte 2: La guerrera que deja marca (2024)
+2024/11/14 12:09:41 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Rebel%20Moon%20%E2%80%93%20Parte%202:%20La%20guerrera%20que%20deja%20marca&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:41 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/934632/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:41 - INFO - SCRAPPEANDO PELICULA Con Air: Riesgo en el aire (1997)
+2024/11/14 12:09:42 - DEBUG - https://www.blogdepelis.top:443 "GET /con-air-riesgo-en-el-aire.html HTTP/11" 200 None
+2024/11/14 12:09:42 - INFO - PELICULA AÑADIDA Con Air: Riesgo en el aire (1997)
+2024/11/14 12:09:42 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Con%20Air:%20Riesgo%20en%20el%20aire&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:42 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1701/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:42 - INFO - SCRAPPEANDO PELICULA Contracara (1997)
+2024/11/14 12:09:42 - DEBUG - https://www.blogdepelis.top:443 "GET /contracara.html HTTP/11" 200 None
+2024/11/14 12:09:42 - INFO - PELICULA AÑADIDA Contracara (1997)
+2024/11/14 12:09:42 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Contracara&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:42 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/754/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:42 - INFO - SCRAPPEANDO PELICULA Rescate imposible (2024)
+2024/11/14 12:09:43 - DEBUG - https://www.blogdepelis.top:443 "GET /rescate-imposible.html HTTP/11" 200 None
+2024/11/14 12:09:43 - INFO - PELICULA AÑADIDA Rescate imposible (2024)
+2024/11/14 12:09:43 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Rescate%20imposible&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:43 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/969492/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:43 - INFO - SCRAPPEANDO PELICULA Duna: Parte dos (2024)
+2024/11/14 12:09:44 - DEBUG - https://www.blogdepelis.top:443 "GET /duna-parte-dos.html HTTP/11" 200 None
+2024/11/14 12:09:44 - INFO - PELICULA AÑADIDA Duna: Parte dos (2024)
+2024/11/14 12:09:44 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Duna:%20Parte%20dos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:44 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/693134/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:44 - INFO - SCRAPPEANDO PELICULA Kung Fu Panda 4 (2024)
+2024/11/14 12:09:45 - DEBUG - https://www.blogdepelis.top:443 "GET /kung-fu-panda-4.html HTTP/11" 200 None
+2024/11/14 12:09:45 - INFO - PELICULA AÑADIDA Kung Fu Panda 4 (2024)
+2024/11/14 12:09:45 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Kung%20Fu%20Panda%204&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:45 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1011985/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:45 - INFO - SCRAPPEANDO PELICULA Atrapados en lo profundo (2024)
+2024/11/14 12:09:46 - DEBUG - https://www.blogdepelis.top:443 "GET /atrapados-en-lo-profundo.html HTTP/11" 200 None
+2024/11/14 12:09:46 - INFO - PELICULA AÑADIDA Atrapados en lo profundo (2024)
+2024/11/14 12:09:46 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Atrapados%20en%20lo%20profundo&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:46 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/616803/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:46 - INFO - SCRAPPEANDO PELICULA Fighter (2024)
+2024/11/14 12:09:47 - DEBUG - https://www.blogdepelis.top:443 "GET /fighter.html HTTP/11" 200 None
+2024/11/14 12:09:47 - INFO - PELICULA AÑADIDA Fighter (2024)
+2024/11/14 12:09:47 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Fighter&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:47 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/15930/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:47 - INFO - SCRAPPEANDO PELICULA El duro (2024)
+2024/11/14 12:09:48 - DEBUG - https://www.blogdepelis.top:443 "GET /el-duro.html HTTP/11" 200 None
+2024/11/14 12:09:48 - INFO - PELICULA AÑADIDA El duro (2024)
+2024/11/14 12:09:48 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20duro&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:48 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1300489/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:48 - INFO - RECORRIENDO PAGINA 8 DE LA CATEGORIA Acción
+2024/11/14 12:09:48 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/page/8 HTTP/11" 200 None
+2024/11/14 12:09:48 - INFO - SCRAPPEANDO PELICULA Madame Web (2024)
+2024/11/14 12:09:49 - DEBUG - https://www.blogdepelis.top:443 "GET /madame-web.html HTTP/11" 200 None
+2024/11/14 12:09:49 - INFO - PELICULA AÑADIDA Madame Web (2024)
+2024/11/14 12:09:49 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Madame%20Web&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:49 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/634492/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:49 - INFO - SCRAPPEANDO PELICULA Sobrevivientes después del terremoto (2023)
+2024/11/14 12:09:50 - DEBUG - https://www.blogdepelis.top:443 "GET /sobrevivientes-despues-del-terremoto.html HTTP/11" 200 None
+2024/11/14 12:09:50 - INFO - PELICULA AÑADIDA Sobrevivientes después del terremoto (2023)
+2024/11/14 12:09:50 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Sobrevivientes%20despu%C3%A9s%20del%20terremoto&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:50 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/729854/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:50 - INFO - SCRAPPEANDO PELICULA Los siete magníficos (2016)
+2024/11/14 12:09:51 - DEBUG - https://www.blogdepelis.top:443 "GET /los-siete-magnificos.html HTTP/11" 200 None
+2024/11/14 12:09:51 - INFO - PELICULA AÑADIDA Los siete magníficos (2016)
+2024/11/14 12:09:51 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Los%20siete%20magn%C3%ADficos&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:51 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/333484/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:51 - INFO - SCRAPPEANDO PELICULA En el valle de violencia (2016)
+2024/11/14 12:09:52 - DEBUG - https://www.blogdepelis.top:443 "GET /en-el-valle-de-violencia.html HTTP/11" 200 None
+2024/11/14 12:09:52 - INFO - PELICULA AÑADIDA En el valle de violencia (2016)
+2024/11/14 12:09:52 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=En%20el%20valle%20de%20violencia&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:52 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/21027/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:52 - INFO - SCRAPPEANDO PELICULA El tren de las 3:10 a Yuma (2007)
+2024/11/14 12:09:53 - DEBUG - https://www.blogdepelis.top:443 "GET /el-tren-de-las-310-a-yuma.html HTTP/11" 200 None
+2024/11/14 12:09:53 - INFO - PELICULA AÑADIDA El tren de las 3:10 a Yuma (2007)
+2024/11/14 12:09:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20tren%20de%20las%203:10%20a%20Yuma&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/5176/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:53 - INFO - SCRAPPEANDO PELICULA Rápida y mortal (1995)
+2024/11/14 12:09:53 - DEBUG - https://www.blogdepelis.top:443 "GET /rapida-y-mortal.html HTTP/11" 200 None
+2024/11/14 12:09:53 - INFO - PELICULA AÑADIDA Rápida y mortal (1995)
+2024/11/14 12:09:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=R%C3%A1pida%20y%20mortal&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/12106/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:53 - INFO - SCRAPPEANDO PELICULA Planeta terror (2007)
+2024/11/14 12:09:54 - DEBUG - https://www.blogdepelis.top:443 "GET /planeta-terror.html HTTP/11" 200 None
+2024/11/14 12:09:54 - INFO - PELICULA AÑADIDA Planeta terror (2007)
+2024/11/14 12:09:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Planeta%20terror&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1992/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:54 - INFO - SCRAPPEANDO PELICULA A prueba de muerte (2007)
+2024/11/14 12:09:55 - DEBUG - https://www.blogdepelis.top:443 "GET /a-prueba-de-muerte.html HTTP/11" 200 None
+2024/11/14 12:09:55 - INFO - PELICULA AÑADIDA A prueba de muerte (2007)
+2024/11/14 12:09:55 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=A%20prueba%20de%20muerte&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:55 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1991/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:55 - INFO - SCRAPPEANDO PELICULA Damsel (2024)
+2024/11/14 12:09:56 - DEBUG - https://www.blogdepelis.top:443 "GET /damsel.html HTTP/11" 200 None
+2024/11/14 12:09:56 - INFO - PELICULA AÑADIDA Damsel (2024)
+2024/11/14 12:09:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Damsel&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/763215/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:56 - INFO - SCRAPPEANDO PELICULA El retorno de los Thundermans (2024)
+2024/11/14 12:09:57 - DEBUG - https://www.blogdepelis.top:443 "GET /el-retorno-de-los-thundermans.html HTTP/11" 200 None
+2024/11/14 12:09:57 - INFO - PELICULA AÑADIDA El retorno de los Thundermans (2024)
+2024/11/14 12:09:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=El%20retorno%20de%20los%20Thundermans&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1094556/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:57 - INFO - SCRAPPEANDO PELICULA Argylle: Agente secreto (2024)
+2024/11/14 12:09:58 - DEBUG - https://www.blogdepelis.top:443 "GET /argylle-agente-secreto.html HTTP/11" 200 None
+2024/11/14 12:09:58 - INFO - PELICULA AÑADIDA Argylle: Agente secreto (2024)
+2024/11/14 12:09:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Argylle:%20Agente%20secreto&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/848538/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:58 - INFO - SCRAPPEANDO PELICULA Megamente contra el sindicato de Doom (2024)
+2024/11/14 12:09:59 - DEBUG - https://www.blogdepelis.top:443 "GET /megamente-contra-el-sindicato-de-doom.html HTTP/11" 200 None
+2024/11/14 12:09:59 - INFO - PELICULA AÑADIDA Megamente contra el sindicato de Doom (2024)
+2024/11/14 12:09:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Megamente%20contra%20el%20sindicato%20de%20Doom&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:09:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/1239251/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:09:59 - INFO - RECORRIENDO PAGINA 9 DE LA CATEGORIA Acción
+2024/11/14 12:09:59 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/page/9 HTTP/11" 200 None
+2024/11/14 12:09:59 - INFO - SCRAPPEANDO PELICULA Beekeeper: Sentencia de muerte (2024)
+2024/11/14 12:10:00 - DEBUG - https://www.blogdepelis.top:443 "GET /beekeeper-sentencia-de-muerte.html HTTP/11" 200 None
+2024/11/14 12:10:00 - INFO - PELICULA AÑADIDA Beekeeper: Sentencia de muerte (2024)
+2024/11/14 12:10:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=Beekeeper:%20Sentencia%20de%20muerte&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:10:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/866398/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:10:00 - INFO - SCRAPPEANDO PELICULA Código 8: Renegados (2024)
+2024/11/14 12:10:01 - DEBUG - https://www.blogdepelis.top:443 "GET /codigo-8-renegados.html HTTP/11" 200 None
+2024/11/14 12:10:01 - INFO - PELICULA AÑADIDA Código 8: Renegados (2024)
+2024/11/14 12:10:01 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/movie?query=C%C3%B3digo%208:%20Renegados&include_adult=false&language=es-ES&page=1 HTTP/11" 200 None
+2024/11/14 12:10:01 - DEBUG - https://api.themoviedb.org:443 "GET /3/movie/932420/credits?language=es-ES HTTP/11" 200 None
+2024/11/14 12:10:01 - INFO - SCRAPPEANDO PELICULA Código 8 (2019)
