@@ -13,11 +13,16 @@ logging.basicConfig(
     datefmt="%Y/%m/%d %H:%M:%S"
 )
 
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36'
+}
+
 SESSION = requests.Session()
+SESSION.headers = HEADERS
 
 
 def save_movies(movies):
-    with open(f'Data/scrappy/scrappy-{datetime.now().strftime("%Y%m%d")}.json', 'w', encoding="utf-8") as file:
+    with open(f'Data/scrappy/blogDePelis.json', 'w', encoding="utf-8") as file:
         json.dump(movies, file, ensure_ascii=False, indent=4)
 
 

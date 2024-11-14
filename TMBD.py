@@ -6,7 +6,7 @@ import unicodedata
 import re
 
 logging.basicConfig(
-    filename=f"TMBD.log",
+    filename=f"Logs/TMBD.log",
     level = logging.DEBUG,
     format = '%(asctime)s - %(levelname)s - %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S'
@@ -16,8 +16,8 @@ logging.basicConfig(
 BASE_URL = "https://api.themoviedb.org/3/search/multi"
 
 # Carpeta almacenamiento de los archivos json
-R_PATH = './Data/scrappy'
-W_PATH = './Data/apis'
+R_PATH = 'Data/scrappy'
+W_PATH = 'Data/apis'
 
 HEADERS = {
     "accept": "application/json",

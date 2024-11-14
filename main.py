@@ -39,13 +39,14 @@ def main(scrappy_file=None, open_data_file=None):
                         if tmdb_id:
                             credits = tmdb_api.get_credits(tmdb_id, 'Series' in movies.get(movie.get_text(strip=True), False).get('categoria'))
                             movie_in_dict["credits"] = credits
+
     else:
         movies = json.loads(scrappy_file.read())
         for movie in movies.values():
             movie.get()
 try:
     main()
-    with open(f'Data/scrappy/scrappy-20241009.json', 'r',
+    with open(f'Data/scrappy/blogDePelis.json', 'r',
                   encoding="utf-8") as scrappy_file:
         main(scrappy_file)
 except Exception as e:

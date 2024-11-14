@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 from unidecode import unidecode
-import config
 import requests
 import logging
 from datetime import datetime
+
 logging.basicConfig(
     filename=f"Data/scrappy-logs-{datetime.now().strftime('%Y%m%d')}.log",
     level=logging.DEBUG,
@@ -17,7 +17,7 @@ BASE_SEARCH_URL = "https://api.themoviedb.org/3/search/"
 
 HEADERS = {
     "accept": "application/json",
-    "Authorization": "Bearer "+config.TOKEN
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0ZjU1MzAyMmE0ZDg2YzA4OWUxZTNiZjgwZmZhNGYyZiIsIm5iZiI6MTcyODQ4ODczOS45NDI4NDQsInN1YiI6IjY3MDZhNDE4NTk3YzEyNmYwN2RkZDZiNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.H874m0N8DVjqDkjAudBq9YEYRKK_KnLAzMMIICHIlkI"
 }
 
 SESSION = requests.Session()
@@ -32,9 +32,10 @@ def get_id(nombre, serie=False):
     response = SESSION.get(url, headers=HEADERS)
     if response.status_code == 200:
         data_response = response.json()
-        found = data_response['results'][0]
-        if found:
-            id = found['id']
+        if len(data_response["results"]) > 0:
+            found = data_response['results'][0]
+            if found:
+                id = found['id']
     if not id:
         logging.critical(f"NO SE HA ENCONTRADO {nombre}")
     return id

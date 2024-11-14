@@ -1,7 +1,6 @@
 import logging.config
 import requests
 import json
-import datetime
 import logging
 from bs4 import BeautifulSoup
 import unicodedata
@@ -222,7 +221,7 @@ try:
                     while currentPage <= totalPages:
                         currentPage += 1
                         params = {
-                            # Atributo que especifica el número de página decuelto por la api
+                            # Atributo que especifica el número de página devuelto por la api
                             "_page": currentPage 
                         }
 
