@@ -180,92 +180,93 @@ def detalles_peli(evento):
 
 
 # Extraccion de los codigos de tipos de eventos
-try: 
-    logging.info("Iniciando ingesta eventos opendata")
-    endpoint = "v1.0/eventType"
+def openData():
+    try: 
+        logging.info("Iniciando ingesta eventos opendata")
+        endpoint = "v1.0/eventType"
 
-    logging.info(f'Realizando conexion a la api {BASE_URL}')
+        logging.info(f'Realizando conexion a la api {BASE_URL}')
 
-    # Llamada al endpoint que devuelve los tipos de ventos culturales junto con sus ids
-    response = session.get(BASE_URL + endpoint)
+        # Llamada al endpoint que devuelve los tipos de ventos culturales junto con sus ids
+        response = session.get(BASE_URL + endpoint)
 
-    if response.status_code == 200:
-        logging.info(f"Peticion a {endpoint} realizada correctamente.")
-        data_response = response.json()
+        if response.status_code == 200:
+            logging.info(f"Peticion a {endpoint} realizada correctamente.")
+            data_response = response.json()
 
-        eventos = []
-        idTipo = -1
-        for tipo in data_response:
-            if tipo["nameEs"] in EVENT_TYPES:
-                idTipo = tipo["id"]
-                logging.info(f"ID de {tipo["nameEs"]}: {idTipo}")
-                endpoint = f"v1.0/events/byType/{idTipo}"
+            eventos = []
+            idTipo = -1
+            for tipo in data_response:
+                if tipo["nameEs"] in EVENT_TYPES:
+                    idTipo = tipo["id"]
+                    logging.info(f"ID de {tipo["nameEs"]}: {idTipo}")
+                    endpoint = f"v1.0/events/byType/{idTipo}"
 
-                # Se extraen los eventos del tipo cuyo id ha sido previamente obtenido
-                response = session.get(BASE_URL + endpoint)
+                    # Se extraen los eventos del tipo cuyo id ha sido previamente obtenido
+                    response = session.get(BASE_URL + endpoint)
 
-                if response.status_code == 200:
-                    logging.info(f"Peticion a {endpoint} realizada correctamente.")
-                    data_response = response.json()
+                    if response.status_code == 200:
+                        logging.info(f"Peticion a {endpoint} realizada correctamente.")
+                        data_response = response.json()
 
-                    totalPages = data_response["totalPages"] 
-                    currentPage = data_response["currentPage"]
-                    
-                    for item in data_response["items"]:
-                        evento = formatear(item)
+                        totalPages = data_response["totalPages"] 
+                        currentPage = data_response["currentPage"]
+                        
+                        for item in data_response["items"]:
+                            evento = formatear(item)
 
-                        if evento:
-                            eventos.append(detalles_peli(evento))
+                            if evento:
+                                eventos.append(detalles_peli(evento))
 
-                    # La api devuelve la informacion paginada, por lo que se hacen varias peticiones hasta extraer toda la información
-                    while currentPage <= totalPages:
-                        currentPage += 1
-                        params = {
-                            # Atributo que especifica el número de página devuelto por la api
-                            "_page": currentPage 
-                        }
+                        # La api devuelve la informacion paginada, por lo que se hacen varias peticiones hasta extraer toda la información
+                        while currentPage <= totalPages:
+                            currentPage += 1
+                            params = {
+                                # Atributo que especifica el número de página devuelto por la api
+                                "_page": currentPage 
+                            }
 
-                        try:
-                            response = session.get(BASE_URL + endpoint, params=params)
-                            data_response = response.json()
+                            try:
+                                response = session.get(BASE_URL + endpoint, params=params)
+                                data_response = response.json()
 
-                            for item in data_response["items"]:
-                                evento = formatear(item)
+                                for item in data_response["items"]:
+                                    evento = formatear(item)
 
-                                if evento:
-                                    eventos.append(detalles_peli(evento))
-                        except Exception as e: 
-                            logging.critical(f'Error inesperado al extraer la pagina {currentPage}: {e}')
+                                    if evento:
+                                        eventos.append(detalles_peli(evento))
+                            except Exception as e: 
+                                logging.critical(f'Error inesperado al extraer la pagina {currentPage}: {e}')
 
-                    # Una vez que se han obtenido los eventos de todos los tipos de interés se corta el bucle
-                    EVENT_TYPES.remove(tipo["nameEs"])
-                    if len(EVENT_TYPES) == 0: 
-                        break
+                        # Una vez que se han obtenido los eventos de todos los tipos de interés se corta el bucle
+                        EVENT_TYPES.remove(tipo["nameEs"])
+                        if len(EVENT_TYPES) == 0: 
+                            break
 
-        if idTipo == -1:
-            raise Exception("Error al extraer la id de los tipos: {EVENT_TYPES}")
+            if idTipo == -1:
+                raise Exception("Error al extraer la id de los tipos: {EVENT_TYPES}")
 
-        # archivo_json = f'{BASE_PATH}/datos_eventos_openData_{datetime.datetime.now().strftime("%Y%m%d")}.json'
-        archivo_json = f'{BASE_PATH}/datos_eventos_openData.json'
+            # archivo_json = f'{BASE_PATH}/datos_eventos_openData_{datetime.datetime.now().strftime("%Y%m%d")}.json'
+            archivo_json = f'{BASE_PATH}/datos_eventos_openData.json'
 
-        with open(archivo_json, "w", encoding="utf-8") as file: 
-            json.dump(eventos, file, ensure_ascii=False,  indent=4)
-            logging.info("Archivo json generado correctamente.")
+            with open(archivo_json, "w", encoding="utf-8") as file: 
+                json.dump(eventos, file, ensure_ascii=False,  indent=4)
+                logging.info("Archivo json generado correctamente.")
 
-except requests.exceptions.HTTPError as http_err: 
-    logging.error(f'Error HTTP: {http_err}')
-except requests.exceptions.ConnectionError as conn_err: 
-    logging.error(f'Error de conexion: {conn_err}')
-except requests.exceptions.Timeout as timeout_err: 
-    logging.error(f'Error de timeout: {timeout_err}')
-except requests.exceptions.RequestException as req_err: 
-    logging.error(f'Error en la solicitud: {req_err}')
-except Exception as e: 
-    logging.critical(f'Error inesperado: {e}')
-else: 
-    logging.info("Ingesta completada correctamente.")
-finally:
-    logging.info(errores)
+    except requests.exceptions.HTTPError as http_err: 
+        logging.error(f'Error HTTP: {http_err}')
+    except requests.exceptions.ConnectionError as conn_err: 
+        logging.error(f'Error de conexion: {conn_err}')
+    except requests.exceptions.Timeout as timeout_err: 
+        logging.error(f'Error de timeout: {timeout_err}')
+    except requests.exceptions.RequestException as req_err: 
+        logging.error(f'Error en la solicitud: {req_err}')
+    except Exception as e: 
+        logging.critical(f'Error inesperado: {e}')
+    else: 
+        logging.info("Ingesta completada correctamente.")
+    finally:
+        logging.info(errores)
 
 
 

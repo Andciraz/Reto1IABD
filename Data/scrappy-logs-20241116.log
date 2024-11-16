@@ -1,0 +1,562 @@
+2024/11/16 19:58:02 - DEBUG - Starting new HTTPS connection (1): www.blogdepelis.top:443
+2024/11/16 19:58:02 - DEBUG - https://www.blogdepelis.top:443 "GET / HTTP/11" 200 None
+2024/11/16 19:58:02 - INFO - RECORRIENDO CATEGORIA Acción
+2024/11/16 19:58:03 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion HTTP/11" 200 None
+2024/11/16 19:58:03 - INFO - COMENZANDO A RECORRER PAGINAS (81) DE LA CATEGORIA Acción
+2024/11/16 19:58:03 - INFO - RECORRIENDO PAGINA 1 DE LA CATEGORIA Acción
+2024/11/16 19:58:03 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/ HTTP/11" 301 None
+2024/11/16 19:58:03 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion HTTP/11" 200 None
+2024/11/16 19:58:03 - INFO - SCRAPPEANDO PELICULA Libre (2024)
+2024/11/16 19:58:04 - DEBUG - https://www.blogdepelis.top:443 "GET /libre.html HTTP/11" 200 None
+2024/11/16 19:58:04 - INFO - PELICULA AÑADIDA Libre (2024)
+2024/11/16 19:58:04 - INFO - SCRAPPEANDO PELICULA Pokémon x siempre: Celebi, la voz del bosque (2001)
+2024/11/16 19:58:05 - DEBUG - https://www.blogdepelis.top:443 "GET /pokemon-x-siempre-celebi-la-voz-del-bosque.html HTTP/11" 200 None
+2024/11/16 19:58:05 - INFO - PELICULA AÑADIDA Pokémon x siempre: Celebi, la voz del bosque (2001)
+2024/11/16 19:58:05 - INFO - SCRAPPEANDO PELICULA Pokémon 3: El hechizo de los Unown (2000)
+2024/11/16 19:58:06 - DEBUG - https://www.blogdepelis.top:443 "GET /pokemon-3-el-hechizo-de-los-unown.html HTTP/11" 200 None
+2024/11/16 19:58:06 - INFO - PELICULA AÑADIDA Pokémon 3: El hechizo de los Unown (2000)
+2024/11/16 19:58:06 - INFO - SCRAPPEANDO PELICULA Canario negro (2024)
+2024/11/16 19:58:06 - DEBUG - https://www.blogdepelis.top:443 "GET /canario-negro.html HTTP/11" 200 None
+2024/11/16 19:58:07 - INFO - PELICULA AÑADIDA Canario negro (2024)
+2024/11/16 19:58:07 - INFO - SCRAPPEANDO PELICULA Pokémon 2000: El Poder de Uno (1999)
+2024/11/16 19:58:15 - DEBUG - Starting new HTTPS connection (1): www.blogdepelis.top:443
+2024/11/16 19:58:15 - DEBUG - https://www.blogdepelis.top:443 "GET / HTTP/11" 200 None
+2024/11/16 19:58:15 - INFO - RECORRIENDO CATEGORIA Acción
+2024/11/16 19:58:16 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion HTTP/11" 200 None
+2024/11/16 19:58:16 - INFO - COMENZANDO A RECORRER PAGINAS (81) DE LA CATEGORIA Acción
+2024/11/16 19:58:16 - INFO - RECORRIENDO PAGINA 1 DE LA CATEGORIA Acción
+2024/11/16 19:58:16 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/ HTTP/11" 301 None
+2024/11/16 19:58:16 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion HTTP/11" 200 None
+2024/11/16 19:58:16 - INFO - SCRAPPEANDO PELICULA Libre (2024)
+2024/11/16 19:58:17 - DEBUG - https://www.blogdepelis.top:443 "GET /libre.html HTTP/11" 200 None
+2024/11/16 19:58:17 - INFO - PELICULA AÑADIDA Libre (2024)
+2024/11/16 19:58:17 - INFO - SCRAPPEANDO PELICULA Pokémon x siempre: Celebi, la voz del bosque (2001)
+2024/11/16 19:58:18 - DEBUG - https://www.blogdepelis.top:443 "GET /pokemon-x-siempre-celebi-la-voz-del-bosque.html HTTP/11" 200 None
+2024/11/16 19:58:18 - INFO - PELICULA AÑADIDA Pokémon x siempre: Celebi, la voz del bosque (2001)
+2024/11/16 19:58:18 - INFO - SCRAPPEANDO PELICULA Pokémon 3: El hechizo de los Unown (2000)
+2024/11/16 19:58:18 - DEBUG - https://www.blogdepelis.top:443 "GET /pokemon-3-el-hechizo-de-los-unown.html HTTP/11" 200 None
+2024/11/16 19:58:18 - INFO - PELICULA AÑADIDA Pokémon 3: El hechizo de los Unown (2000)
+2024/11/16 19:58:18 - INFO - SCRAPPEANDO PELICULA Canario negro (2024)
+2024/11/16 19:58:19 - DEBUG - https://www.blogdepelis.top:443 "GET /canario-negro.html HTTP/11" 200 None
+2024/11/16 19:58:19 - INFO - PELICULA AÑADIDA Canario negro (2024)
+2024/11/16 19:58:19 - INFO - SCRAPPEANDO PELICULA Pokémon 2000: El Poder de Uno (1999)
+2024/11/16 19:58:20 - DEBUG - https://www.blogdepelis.top:443 "GET /pokemon-2000-el-poder-de-uno.html HTTP/11" 200 None
+2024/11/16 19:58:20 - INFO - PELICULA AÑADIDA Pokémon 2000: El Poder de Uno (1999)
+2024/11/16 19:58:20 - INFO - SCRAPPEANDO PELICULA Transformers Uno (2024)
+2024/11/16 19:58:21 - DEBUG - https://www.blogdepelis.top:443 "GET /transformers-uno.html HTTP/11" 200 None
+2024/11/16 19:58:21 - INFO - PELICULA AÑADIDA Transformers Uno (2024)
+2024/11/16 19:58:21 - INFO - SCRAPPEANDO PELICULA Fuera de las sombras (2024)
+2024/11/16 19:58:22 - DEBUG - https://www.blogdepelis.top:443 "GET /fuera-de-las-sombras.html HTTP/11" 200 None
+2024/11/16 19:58:22 - INFO - PELICULA AÑADIDA Fuera de las sombras (2024)
+2024/11/16 19:58:22 - INFO - SCRAPPEANDO PELICULA Hermanos (2024)
+2024/11/16 19:58:23 - DEBUG - https://www.blogdepelis.top:443 "GET /hermanos.html HTTP/11" 200 None
+2024/11/16 19:58:23 - INFO - PELICULA AÑADIDA Hermanos (2024)
+2024/11/16 19:58:23 - INFO - SCRAPPEANDO PELICULA Hellboy: The Crooked Man (2024)
+2024/11/16 19:58:24 - DEBUG - https://www.blogdepelis.top:443 "GET /hellboy-the-crooked-man.html HTTP/11" 200 None
+2024/11/16 19:58:24 - INFO - PELICULA AÑADIDA Hellboy: The Crooked Man (2024)
+2024/11/16 19:58:24 - INFO - SCRAPPEANDO PELICULA Los tipos malos: ¿Truco o atraco? (2024)
+2024/11/16 19:58:25 - DEBUG - https://www.blogdepelis.top:443 "GET /los-tipos-malos-truco-o-atraco.html HTTP/11" 200 None
+2024/11/16 19:58:25 - INFO - PELICULA AÑADIDA Los tipos malos: ¿Truco o atraco? (2024)
+2024/11/16 19:58:25 - INFO - SCRAPPEANDO PELICULA Problemas… (2024)
+2024/11/16 19:58:26 - DEBUG - https://www.blogdepelis.top:443 "GET /problemas.html HTTP/11" 200 None
+2024/11/16 19:58:26 - INFO - PELICULA AÑADIDA Problemas… (2024)
+2024/11/16 19:58:26 - INFO - SCRAPPEANDO PELICULA Elektra (2005)
+2024/11/16 19:58:27 - DEBUG - https://www.blogdepelis.top:443 "GET /elektra.html HTTP/11" 200 None
+2024/11/16 19:58:27 - INFO - PELICULA AÑADIDA Elektra (2005)
+2024/11/16 19:58:27 - INFO - RECORRIENDO PAGINA 2 DE LA CATEGORIA Acción
+2024/11/16 19:58:27 - DEBUG - https://www.blogdepelis.top:443 "GET /category/accion/page/2 HTTP/11" 200 None
+2024/11/16 19:58:27 - INFO - SCRAPPEANDO PELICULA Gatúbela (2004)
+2024/11/16 19:58:27 - DEBUG - https://www.blogdepelis.top:443 "GET /gatubela.html HTTP/11" 200 None
+2024/11/16 19:58:28 - INFO - PELICULA AÑADIDA Gatúbela (2004)
+2024/11/16 19:58:28 - INFO - SCRAPPEANDO PELICULA Miedo profundo (2016)
+2024/11/16 19:58:28 - DEBUG - https://www.blogdepelis.top:443 "GET /miedo-profundo.html HTTP/11" 200 None
+2024/11/16 19:58:29 - INFO - PELICULA AÑADIDA Miedo profundo (2016)
+2024/11/16 19:58:29 - INFO - SCRAPPEANDO PELICULA Watchmen: Capítulo 1 (2024)
+2024/11/16 19:58:29 - DEBUG - https://www.blogdepelis.top:443 "GET /watchmen-capitulo-1.html HTTP/11" 200 None
+2024/11/16 19:58:29 - INFO - PELICULA AÑADIDA Watchmen: Capítulo 1 (2024)
+2024/11/16 20:33:51 - INFO - Iniciando ingesta eventos opendata
+2024/11/16 20:33:51 - INFO - Realizando conexion a la api https://api.euskadi.eus/culture/events/
+2024/11/16 20:33:51 - DEBUG - Starting new HTTPS connection (1): api.euskadi.eus:443
+2024/11/16 20:33:52 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/eventType HTTP/11" 200 None
+2024/11/16 20:33:52 - INFO - Peticion a v1.0/eventType realizada correctamente.
+2024/11/16 20:33:52 - INFO - ID de Cine y audiovisuales: 9
+2024/11/16 20:33:52 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9 HTTP/11" 200 None
+2024/11/16 20:33:52 - INFO - Peticion a v1.0/events/byType/9 realizada correctamente.
+2024/11/16 20:33:52 - DEBUG - Entrando a 'detalles_peli(Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes internacionales)'
+2024/11/16 20:33:52 - DEBUG - Starting new HTTPS connection (1): api.themoviedb.org:443
+2024/11/16 20:33:52 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Semana+de+Cine+Fant%C3%A1stico+y+de+Terror+de+San+Sebasti%C3%A1n+2023%3A+Marat%C3%B3n+de+cortometrajes+internacionales&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:52 - ERROR - Error al extraer detalles de Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes internacionales: No se ha encontrado coincidencias en Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes internacionales
+2024/11/16 20:33:52 - DEBUG - Entrando a 'detalles_peli(Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes vascos)'
+2024/11/16 20:33:52 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Semana+de+Cine+Fant%C3%A1stico+y+de+Terror+de+San+Sebasti%C3%A1n+2023%3A+Marat%C3%B3n+de+cortometrajes+vascos&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:52 - ERROR - Error al extraer detalles de Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes vascos: No se ha encontrado coincidencias en Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes vascos
+2024/11/16 20:33:52 - DEBUG - Entrando a 'detalles_peli(Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes españoles)'
+2024/11/16 20:33:52 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Semana+de+Cine+Fant%C3%A1stico+y+de+Terror+de+San+Sebasti%C3%A1n+2023%3A+Marat%C3%B3n+de+cortometrajes+espa%C3%B1oles&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:52 - ERROR - Error al extraer detalles de Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes españoles: No se ha encontrado coincidencias en Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes españoles
+2024/11/16 20:33:52 - DEBUG - Entrando a 'detalles_peli(Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes de animación)'
+2024/11/16 20:33:52 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Semana+de+Cine+Fant%C3%A1stico+y+de+Terror+de+San+Sebasti%C3%A1n+2023%3A+Marat%C3%B3n+de+cortometrajes+de+animaci%C3%B3n&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:52 - ERROR - Error al extraer detalles de Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes de animación: No se ha encontrado coincidencias en Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes de animación
+2024/11/16 20:33:52 - DEBUG - Entrando a 'detalles_peli(Documental: "Manolo Kabezabolo" (J. Alberto Andrés Lacasta))'
+2024/11/16 20:33:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Manolo+Kabezabolo&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:53 - DEBUG - Documental: "Manolo Kabezabolo" (J. Alberto Andrés Lacasta) cargada en el mapa
+2024/11/16 20:33:53 - DEBUG - Entrando a 'detalles_peli(Zinegoak 2024 - ZGHEDAPENA 2024 (Plentzia))'
+2024/11/16 20:33:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Zinegoak+2024+-+ZGHEDAPENA+2024+%28Plentzia%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:53 - ERROR - Error al extraer detalles de Zinegoak 2024 - ZGHEDAPENA 2024 (Plentzia): No se ha encontrado coincidencias en Zinegoak 2024 - ZGHEDAPENA 2024 (Plentzia)
+2024/11/16 20:33:53 - DEBUG - Entrando a 'detalles_peli("Lagunak, erreskatera!" (Donostia/San Sebastián - Antiguo Berri))'
+2024/11/16 20:33:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Lagunak%2C+erreskatera%21&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:53 - ERROR - Error al extraer detalles de Lagunak, erreskatera!: No se ha encontrado coincidencias en "Lagunak, erreskatera!" (Donostia/San Sebastián - Antiguo Berri)
+2024/11/16 20:33:53 - DEBUG - Entrando a 'detalles_peli("Caída Libre")'
+2024/11/16 20:33:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Ca%C3%ADda+Libre&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:53 - DEBUG - "Caída Libre" cargada en el mapa
+2024/11/16 20:33:53 - DEBUG - Entrando a 'detalles_peli(Ozzinema: "Late night with the devil" (Colin & Cameron Cairnes))'
+2024/11/16 20:33:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Late+night+with+the+devil&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:53 - DEBUG - Ozzinema: "Late night with the devil" (Colin & Cameron Cairnes) cargada en el mapa
+2024/11/16 20:33:53 - DEBUG - Entrando a 'detalles_peli("Dragon Ball Z Kai")'
+2024/11/16 20:33:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Dragon+Ball+Z+Kai&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:53 - DEBUG - "Dragon Ball Z Kai" cargada en el mapa
+2024/11/16 20:33:53 - DEBUG - Entrando a 'detalles_peli("Negu Hurbilak")'
+2024/11/16 20:33:53 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Negu+Hurbilak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:54 - DEBUG - "Negu Hurbilak" cargada en el mapa
+2024/11/16 20:33:54 - DEBUG - Entrando a 'detalles_peli(Cineforum Gasteiz: "Ninotchka")'
+2024/11/16 20:33:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Ninotchka&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:54 - DEBUG - Cineforum Gasteiz: "Ninotchka" cargada en el mapa
+2024/11/16 20:33:54 - DEBUG - Entrando a 'detalles_peli("LEGO: Batman")'
+2024/11/16 20:33:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=LEGO%3A+Batman&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:54 - DEBUG - "LEGO: Batman" cargada en el mapa
+2024/11/16 20:33:54 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Elis & Tom. Só tinha de ser com você" (Presenta Alberto Ibarrondo))'
+2024/11/16 20:33:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Elis+%26+Tom.+S%C3%B3+tinha+de+ser+com+voc%C3%AA&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:54 - DEBUG - Jazzinema 2024: "Elis & Tom. Só tinha de ser com você" (Presenta Alberto Ibarrondo) cargada en el mapa
+2024/11/16 20:33:54 - DEBUG - Entrando a 'detalles_peli("Las formas del alma" (Estreno))'
+2024/11/16 20:33:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Las+formas+del+alma&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:54 - ERROR - Error al extraer detalles de Las formas del alma: No se ha encontrado coincidencias en "Las formas del alma" (Estreno)
+2024/11/16 20:33:54 - DEBUG - Entrando a 'detalles_peli("Canta!")'
+2024/11/16 20:33:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Canta%21&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:54 - DEBUG - "Canta!" cargada en el mapa
+2024/11/16 20:33:54 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Alegría-Dulantzi))'
+2024/11/16 20:33:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Alegr%C3%ADa-Dulantzi%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:54 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Alegría-Dulantzi): No se ha encontrado coincidencias en Korterraza Araba 2024 (Alegría-Dulantzi)
+2024/11/16 20:33:54 - DEBUG - Entrando a 'detalles_peli("Negu Hurbilak")'
+2024/11/16 20:33:54 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Negu+Hurbilak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:54 - DEBUG - "Negu Hurbilak" cargada en el mapa
+2024/11/16 20:33:54 - DEBUG - Entrando a 'detalles_peli("Patrick" (Erandio))'
+2024/11/16 20:33:55 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Patrick&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:55 - DEBUG - "Patrick" (Erandio) cargada en el mapa
+2024/11/16 20:33:55 - DEBUG - Entrando a 'detalles_peli("Napoleon txakurtxoa")'
+2024/11/16 20:33:55 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Napoleon+txakurtxoa&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:55 - ERROR - Error al extraer detalles de Napoleon txakurtxoa: No se ha encontrado coincidencias en "Napoleon txakurtxoa"
+2024/11/16 20:33:55 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=2 HTTP/11" 200 None
+2024/11/16 20:33:55 - DEBUG - Entrando a 'detalles_peli(Ciclo Cine al Aire Libre: "Chihiroren bidaia" (El viaje de Chihiro) (Hayao Miyazaki))'
+2024/11/16 20:33:55 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Chihiroren+bidaia&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:55 - DEBUG - Ciclo Cine al Aire Libre: "Chihiroren bidaia" (El viaje de Chihiro) (Hayao Miyazaki) cargada en el mapa
+2024/11/16 20:33:55 - DEBUG - Entrando a 'detalles_peli(Korterraza Gasteiz 2024: "Korterraza Txiki")'
+2024/11/16 20:33:55 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Txiki&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:55 - ERROR - Error al extraer detalles de Korterraza Txiki: No se ha encontrado coincidencias en Korterraza Gasteiz 2024: "Korterraza Txiki"
+2024/11/16 20:33:55 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Elis & Tom. Só tinha de ser com você" (Presenta Miguel Martín))'
+2024/11/16 20:33:55 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Elis+%26+Tom.+S%C3%B3+tinha+de+ser+com+voc%C3%AA&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:55 - DEBUG - Jazzinema 2024: "Elis & Tom. Só tinha de ser com você" (Presenta Miguel Martín) cargada en el mapa
+2024/11/16 20:33:55 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Okondo))'
+2024/11/16 20:33:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:56 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Okondo) cargada en el mapa
+2024/11/16 20:33:56 - DEBUG - Entrando a 'detalles_peli("El Rey Leon")'
+2024/11/16 20:33:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Rey+Leon&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:56 - DEBUG - "El Rey Leon" cargada en el mapa
+2024/11/16 20:33:56 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Luko))'
+2024/11/16 20:33:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Luko%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:56 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Luko): No se ha encontrado coincidencias en Korterraza Araba 2024 (Luko)
+2024/11/16 20:33:56 - DEBUG - Entrando a 'detalles_peli(Ciclo de cine Céline Sciamma: "Naissance des pieuvres (Water Lilies)")'
+2024/11/16 20:33:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Naissance+des+pieuvres+%28Water+Lilies%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:56 - DEBUG - Ciclo de cine Céline Sciamma: "Naissance des pieuvres (Water Lilies)" cargada en el mapa
+2024/11/16 20:33:56 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Ocio))'
+2024/11/16 20:33:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:56 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Ocio) cargada en el mapa
+2024/11/16 20:33:56 - DEBUG - Entrando a 'detalles_peli(Zinema Kalean: "Momiak")'
+2024/11/16 20:33:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Momiak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:56 - DEBUG - Zinema Kalean: "Momiak" cargada en el mapa
+2024/11/16 20:33:56 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Orfeo beltza")'
+2024/11/16 20:33:56 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Orfeo+beltza&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:56 - ERROR - Error al extraer detalles de Orfeo beltza: No se ha encontrado coincidencias en Jazzinema 2024: "Orfeo beltza"
+2024/11/16 20:33:56 - DEBUG - Entrando a 'detalles_peli("Mavka: basoaren zaindaria")'
+2024/11/16 20:33:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Mavka%3A+basoaren+zaindaria&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:57 - DEBUG - "Mavka: basoaren zaindaria" cargada en el mapa
+2024/11/16 20:33:57 - DEBUG - Entrando a 'detalles_peli("Maria Montessori")'
+2024/11/16 20:33:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Maria+Montessori&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:57 - DEBUG - "Maria Montessori" cargada en el mapa
+2024/11/16 20:33:57 - DEBUG - Entrando a 'detalles_peli(Cineforum Gasteiz: "La boda de Muriel")'
+2024/11/16 20:33:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=La+boda+de+Muriel&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:57 - DEBUG - Cineforum Gasteiz: "La boda de Muriel" cargada en el mapa
+2024/11/16 20:33:57 - DEBUG - Entrando a 'detalles_peli("Harpetarra")'
+2024/11/16 20:33:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Harpetarra&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:57 - ERROR - Error al extraer detalles de Harpetarra: No se ha encontrado coincidencias en "Harpetarra"
+2024/11/16 20:33:57 - DEBUG - Entrando a 'detalles_peli("Lumaren atzean, diamantes en bruto" (proyección + coloquio))'
+2024/11/16 20:33:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Lumaren+atzean%2C+diamantes+en+bruto&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:57 - ERROR - Error al extraer detalles de Lumaren atzean, diamantes en bruto: No se ha encontrado coincidencias en "Lumaren atzean, diamantes en bruto" (proyección + coloquio)
+2024/11/16 20:33:57 - DEBUG - Entrando a 'detalles_peli("20.000 especies de abejas")'
+2024/11/16 20:33:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=20.000+especies+de+abejas&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:57 - DEBUG - "20.000 especies de abejas" cargada en el mapa
+2024/11/16 20:33:57 - DEBUG - Entrando a 'detalles_peli("Vaiana")'
+2024/11/16 20:33:57 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Vaiana&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:57 - DEBUG - "Vaiana" cargada en el mapa
+2024/11/16 20:33:57 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Ondategi))'
+2024/11/16 20:33:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Ondategi%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:58 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Ondategi): No se ha encontrado coincidencias en Korterraza Araba 2024 (Ondategi)
+2024/11/16 20:33:58 - DEBUG - Entrando a 'detalles_peli(Aske surfeatu, aske sentitu, aske disfrutatu eta gustora jardun: "Emakumeak* surflari" dokumentala eta solasaldia)'
+2024/11/16 20:33:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Emakumeak%2A+surflari&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:58 - ERROR - Error al extraer detalles de Emakumeak* surflari: No se ha encontrado coincidencias en Aske surfeatu, aske sentitu, aske disfrutatu eta gustora jardun: "Emakumeak* surflari" dokumentala eta solasaldia
+2024/11/16 20:33:58 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Orfeo beltza")'
+2024/11/16 20:33:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Orfeo+beltza&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:58 - ERROR - Error al extraer detalles de Orfeo beltza: No se ha encontrado coincidencias en Jazzinema 2024: "Orfeo beltza"
+2024/11/16 20:33:58 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=3 HTTP/11" 200 None
+2024/11/16 20:33:58 - DEBUG - Entrando a 'detalles_peli("Superheroien familia")'
+2024/11/16 20:33:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Superheroien+familia&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:58 - DEBUG - "Superheroien familia" cargada en el mapa
+2024/11/16 20:33:58 - DEBUG - Entrando a 'detalles_peli(Zinema Kalean: "Momiak")'
+2024/11/16 20:33:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Momiak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:58 - DEBUG - Zinema Kalean: "Momiak" cargada en el mapa
+2024/11/16 20:33:58 - DEBUG - Entrando a 'detalles_peli("Perez sagutxoa")'
+2024/11/16 20:33:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Perez+sagutxoa&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:58 - DEBUG - "Perez sagutxoa" cargada en el mapa
+2024/11/16 20:33:58 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Aramaio))'
+2024/11/16 20:33:58 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Aramaio%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:58 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Aramaio): No se ha encontrado coincidencias en Korterraza Araba 2024 (Aramaio)
+2024/11/16 20:33:58 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Zuaza/Zuhatza))'
+2024/11/16 20:33:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Zuaza%2FZuhatza%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:59 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Zuaza/Zuhatza): No se ha encontrado coincidencias en Korterraza Araba 2024 (Zuaza/Zuhatza)
+2024/11/16 20:33:59 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Olabarri))'
+2024/11/16 20:33:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Olabarri%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:59 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Olabarri): No se ha encontrado coincidencias en Korterraza Araba 2024 (Olabarri)
+2024/11/16 20:33:59 - DEBUG - Entrando a 'detalles_peli(Ciclo Cine al Aire Libre: "Un paseo por el bosque" (Ken Kwapis))'
+2024/11/16 20:33:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Un+paseo+por+el+bosque&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:59 - DEBUG - Ciclo Cine al Aire Libre: "Un paseo por el bosque" (Ken Kwapis) cargada en el mapa
+2024/11/16 20:33:59 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Orfeo beltza")'
+2024/11/16 20:33:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Orfeo+beltza&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:59 - ERROR - Error al extraer detalles de Orfeo beltza: No se ha encontrado coincidencias en Jazzinema 2024: "Orfeo beltza"
+2024/11/16 20:33:59 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Ribabellosa))'
+2024/11/16 20:33:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:59 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Ribabellosa) cargada en el mapa
+2024/11/16 20:33:59 - DEBUG - Entrando a 'detalles_peli("Hanburgesa zaparrada")'
+2024/11/16 20:33:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Hanburgesa+zaparrada&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:59 - DEBUG - "Hanburgesa zaparrada" cargada en el mapa
+2024/11/16 20:33:59 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Santuario de Oro))'
+2024/11/16 20:33:59 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Santuario+de+Oro%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:33:59 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Santuario de Oro): No se ha encontrado coincidencias en Korterraza Araba 2024 (Santuario de Oro)
+2024/11/16 20:33:59 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Zurbano/Zurbao))'
+2024/11/16 20:34:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Zurbano%2FZurbao%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:00 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Zurbano/Zurbao): No se ha encontrado coincidencias en Korterraza Araba 2024 (Zurbano/Zurbao)
+2024/11/16 20:34:00 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Estavillo))'
+2024/11/16 20:34:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Estavillo%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:00 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Estavillo): No se ha encontrado coincidencias en Korterraza Araba 2024 (Estavillo)
+2024/11/16 20:34:00 - DEBUG - Entrando a 'detalles_peli(Ciclo de cine Céline Sciamma: "Tomboy")'
+2024/11/16 20:34:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Tomboy&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:00 - DEBUG - Ciclo de cine Céline Sciamma: "Tomboy" cargada en el mapa
+2024/11/16 20:34:00 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Ullibarri Jauregi))'
+2024/11/16 20:34:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:00 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Ullibarri Jauregi) cargada en el mapa
+2024/11/16 20:34:00 - DEBUG - Entrando a 'detalles_peli(Fiestas de Santurtzi 2024: "Dragoiaren gidaria")'
+2024/11/16 20:34:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Dragoiaren+gidaria&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:00 - DEBUG - Fiestas de Santurtzi 2024: "Dragoiaren gidaria" cargada en el mapa
+2024/11/16 20:34:00 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Ordoñana))'
+2024/11/16 20:34:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Ordo%C3%B1ana%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:00 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Ordoñana): No se ha encontrado coincidencias en Korterraza Araba 2024 (Ordoñana)
+2024/11/16 20:34:00 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Elciego))'
+2024/11/16 20:34:00 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Elciego%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:00 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Elciego): No se ha encontrado coincidencias en Korterraza Araba 2024 (Elciego)
+2024/11/16 20:34:00 - DEBUG - Entrando a 'detalles_peli(Fiestas El Carmen 2024 en Plentzia: "Agur Etxebeste!")'
+2024/11/16 20:34:01 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Agur+Etxebeste%21&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:01 - DEBUG - Fiestas El Carmen 2024 en Plentzia: "Agur Etxebeste!" cargada en el mapa
+2024/11/16 20:34:01 - DEBUG - Entrando a 'detalles_peli(Cineforum Gasteiz: "Bésame, tonto")'
+2024/11/16 20:34:01 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=B%C3%A9same%2C+tonto&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:01 - DEBUG - Cineforum Gasteiz: "Bésame, tonto" cargada en el mapa
+2024/11/16 20:34:01 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=4 HTTP/11" 200 None
+2024/11/16 20:34:01 - DEBUG - Entrando a 'detalles_peli("Luis eta estralurtarrak")'
+2024/11/16 20:34:01 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Luis+eta+estralurtarrak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:01 - DEBUG - "Luis eta estralurtarrak" cargada en el mapa
+2024/11/16 20:34:01 - DEBUG - Entrando a 'detalles_peli("Aupa Etxebeste!")'
+2024/11/16 20:34:01 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Aupa+Etxebeste%21&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:01 - DEBUG - "Aupa Etxebeste!" cargada en el mapa
+2024/11/16 20:34:01 - DEBUG - Entrando a 'detalles_peli("Irati")'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Irati&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - DEBUG - "Irati" cargada en el mapa
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli("Momiak" (Bermeo))'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Momiak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - DEBUG - "Momiak" (Bermeo) cargada en el mapa
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli("20.000 especies de abejas")'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=20.000+especies+de+abejas&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - DEBUG - "20.000 especies de abejas" cargada en el mapa
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli("Enredados")'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Enredados&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - DEBUG - "Enredados" cargada en el mapa
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Antoñana))'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Anto%C3%B1ana%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Antoñana): No se ha encontrado coincidencias en Korterraza Araba 2024 (Antoñana)
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli(Zinema Beach 2024: "Los Goonies")'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Los+Goonies&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - DEBUG - Zinema Beach 2024: "Los Goonies" cargada en el mapa
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Miúcha. A voz da bossa nova")'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Mi%C3%BAcha.+A+voz+da+bossa+nova&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - DEBUG - Jazzinema 2024: "Miúcha. A voz da bossa nova" cargada en el mapa
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli("Boo Kwai eta museoaren lapurreta" (Erandio))'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Boo+Kwai+eta+museoaren+lapurreta&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - DEBUG - "Boo Kwai eta museoaren lapurreta" (Erandio) cargada en el mapa
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Alegría-Dulantzi))'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Alegría-Dulantzi) cargada en el mapa
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli("Erlauntza")'
+2024/11/16 20:34:02 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Erlauntza&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:02 - DEBUG - "Erlauntza" cargada en el mapa
+2024/11/16 20:34:02 - DEBUG - Entrando a 'detalles_peli(Euskarazko film laburrak)'
+2024/11/16 20:34:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Euskarazko+film+laburrak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:03 - ERROR - Error al extraer detalles de Euskarazko film laburrak: No se ha encontrado coincidencias en Euskarazko film laburrak
+2024/11/16 20:34:03 - DEBUG - Entrando a 'detalles_peli("Izotz Aroa 1" (Ice Age 1))'
+2024/11/16 20:34:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Izotz+Aroa+1&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:03 - DEBUG - "Izotz Aroa 1" (Ice Age 1) cargada en el mapa
+2024/11/16 20:34:03 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Gauna))'
+2024/11/16 20:34:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Gauna%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:03 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Gauna): No se ha encontrado coincidencias en Korterraza Araba 2024 (Gauna)
+2024/11/16 20:34:03 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Maestu))'
+2024/11/16 20:34:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Maestu%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:03 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Maestu): No se ha encontrado coincidencias en Korterraza Araba 2024 (Maestu)
+2024/11/16 20:34:03 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Araia))'
+2024/11/16 20:34:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Araia%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:03 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Araia): No se ha encontrado coincidencias en Korterraza Araba 2024 (Araia)
+2024/11/16 20:34:03 - DEBUG - Entrando a 'detalles_peli(Ciclo de Cine al Aire Libre: "Bidasoa 2018-2023" (Fermín Muguruza))'
+2024/11/16 20:34:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Bidasoa+2018-2023&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:03 - DEBUG - Ciclo de Cine al Aire Libre: "Bidasoa 2018-2023" (Fermín Muguruza) cargada en el mapa
+2024/11/16 20:34:03 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Miúcha. A voz da bossa nova")'
+2024/11/16 20:34:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Mi%C3%BAcha.+A+voz+da+bossa+nova&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:03 - DEBUG - Jazzinema 2024: "Miúcha. A voz da bossa nova" cargada en el mapa
+2024/11/16 20:34:03 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Artziniega))'
+2024/11/16 20:34:03 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:03 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Artziniega) cargada en el mapa
+2024/11/16 20:34:04 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=5 HTTP/11" 200 None
+2024/11/16 20:34:04 - DEBUG - Entrando a 'detalles_peli(Zinema Kalean: "Momiak")'
+2024/11/16 20:34:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Momiak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:04 - DEBUG - Zinema Kalean: "Momiak" cargada en el mapa
+2024/11/16 20:34:04 - DEBUG - Entrando a 'detalles_peli("El vasco")'
+2024/11/16 20:34:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+vasco&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:04 - DEBUG - "El vasco" cargada en el mapa
+2024/11/16 20:34:04 - DEBUG - Entrando a 'detalles_peli("Merlin, el encantador")'
+2024/11/16 20:34:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Merlin%2C+el+encantador&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:04 - DEBUG - "Merlin, el encantador" cargada en el mapa
+2024/11/16 20:34:04 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Lanciego))'
+2024/11/16 20:34:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Lanciego%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:04 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Lanciego): No se ha encontrado coincidencias en Korterraza Araba 2024 (Lanciego)
+2024/11/16 20:34:04 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Berantevilla))'
+2024/11/16 20:34:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Berantevilla%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:04 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Berantevilla): No se ha encontrado coincidencias en Korterraza Araba 2024 (Berantevilla)
+2024/11/16 20:34:04 - DEBUG - Entrando a 'detalles_peli(Ciclo de cine Céline Sciamma: "Bande de filles (Girlhood)")'
+2024/11/16 20:34:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Bande+de+filles+%28Girlhood%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:04 - DEBUG - Ciclo de cine Céline Sciamma: "Bande de filles (Girlhood)" cargada en el mapa
+2024/11/16 20:34:04 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Leciñana del Camino))'
+2024/11/16 20:34:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:04 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Leciñana del Camino) cargada en el mapa
+2024/11/16 20:34:04 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Salvatierra/Agurain))'
+2024/11/16 20:34:04 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:04 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Salvatierra/Agurain) cargada en el mapa
+2024/11/16 20:34:04 - DEBUG - Entrando a 'detalles_peli("Mavka: basoaren zaindaria")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Mavka%3A+basoaren+zaindaria&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - "Mavka: basoaren zaindaria" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Dispararon al pianista")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Dispararon+al+pianista&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - Jazzinema 2024: "Dispararon al pianista" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Dispararon al pianista-They Shot The Piano Player")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Dispararon+al+pianista-They+Shot+The+Piano+Player&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - Jazzinema 2024: "Dispararon al pianista-They Shot The Piano Player" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli(Fiestas de Ordizia 2024: "Rabbit Academy, Pazko arraultzen lapurreta handia")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Rabbit+Academy%2C+Pazko+arraultzen+lapurreta+handia&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - ERROR - Error al extraer detalles de Rabbit Academy, Pazko arraultzen lapurreta handia: No se ha encontrado coincidencias en Fiestas de Ordizia 2024: "Rabbit Academy, Pazko arraultzen lapurreta handia"
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli(Vitoria-Gasteiz Ciudad de Cine 2024: "20.000 especies de abejas")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=20.000+especies+de+abejas&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - Vitoria-Gasteiz Ciudad de Cine 2024: "20.000 especies de abejas" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli("Rabbit academy")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Rabbit+academy&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - "Rabbit academy" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli("20.000 especies de abejas")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=20.000+especies+de+abejas&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - "20.000 especies de abejas" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Elis & Tom. Só tinha de ser com você")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Elis+%26+Tom.+S%C3%B3+tinha+de+ser+com+voc%C3%AA&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - Jazzinema 2024: "Elis & Tom. Só tinha de ser com você" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli(Fiestas de Etxebarri 2024: "Un héroe samurai: la leyenda de Hank")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Un+h%C3%A9roe+samurai%3A+la+leyenda+de+Hank&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - Fiestas de Etxebarri 2024: "Un héroe samurai: la leyenda de Hank" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli("Superheroien familia")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Superheroien+familia&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - "Superheroien familia" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli(Cineforum Gasteiz: "¿Qué me pasa doctor?")'
+2024/11/16 20:34:05 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=%C2%BFQu%C3%A9+me+pasa+doctor%3F&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:05 - DEBUG - Cineforum Gasteiz: "¿Qué me pasa doctor?" cargada en el mapa
+2024/11/16 20:34:05 - DEBUG - Entrando a 'detalles_peli("Vicky Bikingoa" (Vicky el Vikingo))'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Vicky+Bikingoa&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - "Vicky Bikingoa" (Vicky el Vikingo) cargada en el mapa
+2024/11/16 20:34:06 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=6 HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli("Barbie" (Greta Gerwig))'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Barbie&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - "Barbie" (Greta Gerwig) cargada en el mapa
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Dispararon al pianista")'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Dispararon+al+pianista&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - Jazzinema 2024: "Dispararon al pianista" cargada en el mapa
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Llanteno))'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Llanteno) cargada en el mapa
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Corro))'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Corro) cargada en el mapa
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli("Izotz Aroa 2: Urtze Aldia" (Ice Age 2: El Deshielo))'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Izotz+Aroa+2%3A+Urtze+Aldia&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - "Izotz Aroa 2: Urtze Aldia" (Ice Age 2: El Deshielo) cargada en el mapa
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Dispararon al pianista"  (Presenta Fernando Trueba))'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Dispararon+al+pianista&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - Jazzinema 2024: "Dispararon al pianista"  (Presenta Fernando Trueba) cargada en el mapa
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Labastida))'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Labastida) cargada en el mapa
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli(Película al aire libre: "Barbie" (Greta Gerwig))'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Barbie&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - DEBUG - Película al aire libre: "Barbie" (Greta Gerwig) cargada en el mapa
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli("Doraemon gladiadorea")'
+2024/11/16 20:34:06 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Doraemon+gladiadorea&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:06 - ERROR - Error al extraer detalles de Doraemon gladiadorea: No se ha encontrado coincidencias en "Doraemon gladiadorea"
+2024/11/16 20:34:06 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Valle Salado))'
+2024/11/16 20:34:07 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Valle+Salado%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:07 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Valle Salado): No se ha encontrado coincidencias en Korterraza Araba 2024 (Valle Salado)
+2024/11/16 20:34:07 - DEBUG - Entrando a 'detalles_peli(Ciclo de cine Céline Sciamma: "Portrait de la jeune fille en feu")'
+2024/11/16 20:34:07 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Portrait+de+la+jeune+fille+en+feu&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:07 - DEBUG - Ciclo de cine Céline Sciamma: "Portrait de la jeune fille en feu" cargada en el mapa
+2024/11/16 20:34:07 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Llodio))'
+2024/11/16 20:34:07 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:07 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Llodio) cargada en el mapa
+2024/11/16 20:34:07 - DEBUG - Entrando a 'detalles_peli(Película al aire libre: "Elemental")'
+2024/11/16 20:34:07 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Elemental&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:07 - DEBUG - Película al aire libre: "Elemental" cargada en el mapa
+2024/11/16 20:34:07 - DEBUG - Entrando a 'detalles_peli(Cortometraje: "De agua y arena")'
+2024/11/16 20:34:07 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Maestu))'
+2024/11/16 20:34:07 - DEBUG - Starting new HTTPS connection (2): api.themoviedb.org:443
+2024/11/16 20:34:07 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Maestu%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:07 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Maestu): No se ha encontrado coincidencias en Korterraza Araba 2024 (Maestu)
+2024/11/16 20:34:07 - DEBUG - Entrando a 'detalles_peli("Irati" (Gorliz))'
+2024/11/16 20:34:07 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Irati&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:07 - DEBUG - "Irati" (Gorliz) cargada en el mapa
+2024/11/16 20:34:07 - DEBUG - Entrando a 'detalles_peli(Zinema Beach 2024: "Jungla de cristal ")'
+2024/11/16 20:34:07 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Jungla+de+cristal+&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:07 - DEBUG - Zinema Beach 2024: "Jungla de cristal " cargada en el mapa
+2024/11/16 20:34:07 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Orfeo beltza")'
+2024/11/16 20:34:08 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Orfeo+beltza&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:08 - ERROR - Error al extraer detalles de Orfeo beltza: No se ha encontrado coincidencias en Jazzinema 2024: "Orfeo beltza"
+2024/11/16 20:34:08 - DEBUG - Entrando a 'detalles_peli(Cineforum Gasteiz: "ZELIG")'
+2024/11/16 20:34:08 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=ZELIG&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:08 - DEBUG - Cineforum Gasteiz: "ZELIG" cargada en el mapa
+2024/11/16 20:34:08 - DEBUG - Entrando a 'detalles_peli("Una familia de superhéroes")'
+2024/11/16 20:34:08 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Una+familia+de+superh%C3%A9roes&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:08 - DEBUG - "Una familia de superhéroes" cargada en el mapa
+2024/11/16 20:34:08 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=7 HTTP/11" 200 None
+2024/11/16 20:34:08 - DEBUG - Entrando a 'detalles_peli("Shrek")'
+2024/11/16 20:34:08 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Shrek&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:08 - DEBUG - "Shrek" cargada en el mapa
+2024/11/16 20:34:08 - DEBUG - Entrando a 'detalles_peli(Noches de cine al aire libre: "Perfect Days" (Wim Wenders))'
+2024/11/16 20:34:08 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Perfect+Days&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:08 - DEBUG - Noches de cine al aire libre: "Perfect Days" (Wim Wenders) cargada en el mapa
+2024/11/16 20:34:08 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Labastida))'
+2024/11/16 20:34:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Labastida%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:09 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Labastida): No se ha encontrado coincidencias en Korterraza Araba 2024 (Labastida)
+2024/11/16 20:34:09 - DEBUG - Entrando a 'detalles_peli("Boo Kwai eta museoaren lapurreta" (Eibar))'
+2024/11/16 20:34:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Boo+Kwai+eta+museoaren+lapurreta&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:09 - DEBUG - "Boo Kwai eta museoaren lapurreta" (Eibar) cargada en el mapa
+2024/11/16 20:34:09 - DEBUG - Entrando a 'detalles_peli("Izotz Aroa 3: Dinosaurioen egunsentia" (Ice Age 3: El origen de los dinosaurios))'
+2024/11/16 20:34:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Izotz+Aroa+3%3A+Dinosaurioen+egunsentia&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:09 - ERROR - Error al extraer detalles de Izotz Aroa 3: Dinosaurioen egunsentia: No se ha encontrado coincidencias en "Izotz Aroa 3: Dinosaurioen egunsentia" (Ice Age 3: El origen de los dinosaurios)
+2024/11/16 20:34:09 - DEBUG - Entrando a 'detalles_peli(Noches de cine al aire libre: "Sala de Profesores" (Ilker Çatak))'
+2024/11/16 20:34:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Sala+de+Profesores&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:09 - DEBUG - Noches de cine al aire libre: "Sala de Profesores" (Ilker Çatak) cargada en el mapa
+2024/11/16 20:34:09 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Portilla))'
+2024/11/16 20:34:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Portilla%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:09 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Portilla): No se ha encontrado coincidencias en Korterraza Araba 2024 (Portilla)
+2024/11/16 20:34:09 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Elciego))'
+2024/11/16 20:34:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:09 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Elciego) cargada en el mapa
+2024/11/16 20:34:09 - DEBUG - Entrando a 'detalles_peli(Un Pórtico de Cine: "BARBIE" (Greta Gerwig))'
+2024/11/16 20:34:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=BARBIE&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:09 - DEBUG - Un Pórtico de Cine: "BARBIE" (Greta Gerwig) cargada en el mapa
+2024/11/16 20:34:09 - DEBUG - Entrando a 'detalles_peli("Superheroien familia")'
+2024/11/16 20:34:09 - DEBUG - Entrando a 'detalles_peli(Noches de cine 2024: "Ilargirantz")'
+2024/11/16 20:34:09 - DEBUG - Starting new HTTPS connection (3): api.themoviedb.org:443
+2024/11/16 20:34:09 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Ilargirantz&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:09 - DEBUG - Noches de cine 2024: "Ilargirantz" cargada en el mapa
+2024/11/16 20:34:09 - DEBUG - Entrando a 'detalles_peli("Babe, el cerdito valiente")'
+2024/11/16 20:34:10 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Llodio/Laudio))'
+2024/11/16 20:34:10 - DEBUG - Starting new HTTPS connection (4): api.themoviedb.org:443
+2024/11/16 20:34:10 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Llodio%2FLaudio%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:10 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Llodio/Laudio): No se ha encontrado coincidencias en Korterraza Araba 2024 (Llodio/Laudio)
+2024/11/16 20:34:10 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Añastro))'
+2024/11/16 20:34:10 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28A%C3%B1astro%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:10 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Añastro): No se ha encontrado coincidencias en Korterraza Araba 2024 (Añastro)
+2024/11/16 20:34:10 - DEBUG - Entrando a 'detalles_peli(Ciclo de cine Céline Sciamma: "Petite maman")'
+2024/11/16 20:34:10 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Petite+maman&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:10 - DEBUG - Ciclo de cine Céline Sciamma: "Petite maman" cargada en el mapa
+2024/11/16 20:34:10 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Izarra))'
+2024/11/16 20:34:10 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:10 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Izarra) cargada en el mapa
+2024/11/16 20:34:10 - DEBUG - Entrando a 'detalles_peli(Noches de cine al aire libre: "Un año difñicil" (Olivier Nakache, Eric Toledano))'
+2024/11/16 20:34:11 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Un+a%C3%B1o+dif%C3%B1icil&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:11 - ERROR - Error al extraer detalles de Un año difñicil: No se ha encontrado coincidencias en Noches de cine al aire libre: "Un año difñicil" (Olivier Nakache, Eric Toledano)
+2024/11/16 20:34:11 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Orfeo beltza")'
+2024/11/16 20:34:11 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Orfeo+beltza&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:11 - ERROR - Error al extraer detalles de Orfeo beltza: No se ha encontrado coincidencias en Jazzinema 2024: "Orfeo beltza"
+2024/11/16 20:34:11 - DEBUG - Entrando a 'detalles_peli("Bizkarsoro" (Plentzia))'
+2024/11/16 20:34:11 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Bizkarsoro&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:11 - DEBUG - "Bizkarsoro" (Plentzia) cargada en el mapa
+2024/11/16 20:34:11 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Miúcha. A voz da bossa nova")'
+2024/11/16 20:34:11 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Mi%C3%BAcha.+A+voz+da+bossa+nova&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:11 - DEBUG - Jazzinema 2024: "Miúcha. A voz da bossa nova" cargada en el mapa
+2024/11/16 20:34:11 - DEBUG - https://api.euskadi.eus:443 "GET /culture/events/v1.0/events/byType/9?_page=8 HTTP/11" 200 None
+2024/11/16 20:34:11 - DEBUG - Entrando a 'detalles_peli("ROBOT DREAMS")'
+2024/11/16 20:34:11 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=ROBOT+DREAMS&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:11 - DEBUG - "ROBOT DREAMS" cargada en el mapa
+2024/11/16 20:34:11 - DEBUG - Entrando a 'detalles_peli("LEGO: Ninjago")'
+2024/11/16 20:34:11 - DEBUG - Entrando a 'detalles_peli("Mavka: basoaren zaindaria")'
+2024/11/16 20:34:11 - DEBUG - Starting new HTTPS connection (5): api.themoviedb.org:443
+2024/11/16 20:34:11 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Mavka%3A+basoaren+zaindaria&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:11 - DEBUG - "Mavka: basoaren zaindaria" cargada en el mapa
+2024/11/16 20:34:11 - DEBUG - Entrando a 'detalles_peli(Zinema Kalean: "Momiak")'
+2024/11/16 20:34:11 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Momiak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:11 - DEBUG - Zinema Kalean: "Momiak" cargada en el mapa
+2024/11/16 20:34:11 - DEBUG - Entrando a 'detalles_peli("Flipper")'
+2024/11/16 20:34:12 - DEBUG - Entrando a 'detalles_peli("BARBIE" (Greta Gerwig))'
+2024/11/16 20:34:12 - DEBUG - Starting new HTTPS connection (6): api.themoviedb.org:443
+2024/11/16 20:34:12 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=BARBIE&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:12 - DEBUG - "BARBIE" (Greta Gerwig) cargada en el mapa
+2024/11/16 20:34:12 - DEBUG - Entrando a 'detalles_peli("Rio")'
+2024/11/16 20:34:12 - DEBUG - Entrando a 'detalles_peli("Karpeta Urdinak")'
+2024/11/16 20:34:12 - DEBUG - Starting new HTTPS connection (7): api.themoviedb.org:443
+2024/11/16 20:34:12 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Karpeta+Urdinak&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:12 - DEBUG - "Karpeta Urdinak" cargada en el mapa
+2024/11/16 20:34:12 - DEBUG - Entrando a 'detalles_peli("Akelarre")'
+2024/11/16 20:34:12 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Akelarre&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:12 - DEBUG - "Akelarre" cargada en el mapa
+2024/11/16 20:34:12 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Faido))'
+2024/11/16 20:34:12 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Urarte))'
+2024/11/16 20:34:12 - DEBUG - Starting new HTTPS connection (8): api.themoviedb.org:443
+2024/11/16 20:34:12 - DEBUG - Entrando a 'detalles_peli(Festival de Música de Zumaia 2024: Proyección Opera: "Tosca")'
+2024/11/16 20:34:12 - DEBUG - Starting new HTTPS connection (9): api.themoviedb.org:443
+2024/11/16 20:34:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Tosca&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:13 - DEBUG - Festival de Música de Zumaia 2024: Proyección Opera: "Tosca" cargada en el mapa
+2024/11/16 20:34:13 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Payueta/Pagoeta))'
+2024/11/16 20:34:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Korterraza+Araba+2024+%28Payueta%2FPagoeta%29&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:13 - ERROR - Error al extraer detalles de Korterraza Araba 2024 (Payueta/Pagoeta): No se ha encontrado coincidencias en Korterraza Araba 2024 (Payueta/Pagoeta)
+2024/11/16 20:34:13 - DEBUG - Entrando a 'detalles_peli(Risas Bajo las Estrellas 2024: "El Carné" (Amurrio))'
+2024/11/16 20:34:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+Carn%C3%A9&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:13 - DEBUG - Risas Bajo las Estrellas 2024: "El Carné" (Amurrio) cargada en el mapa
+2024/11/16 20:34:13 - DEBUG - Entrando a 'detalles_peli(Semana grande de Donostia 2024: AIFF Festival de Cine Marítimo del Aquarium "El futuro del océano")'
+2024/11/16 20:34:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=El+futuro+del+oc%C3%A9ano&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:13 - DEBUG - Semana grande de Donostia 2024: AIFF Festival de Cine Marítimo del Aquarium "El futuro del océano" cargada en el mapa
+2024/11/16 20:34:13 - DEBUG - Entrando a 'detalles_peli(ÓPERA FEST SUMMER 2024)'
+2024/11/16 20:34:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=%C3%93PERA+FEST+SUMMER+2024&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:13 - ERROR - Error al extraer detalles de ÓPERA FEST SUMMER 2024: No se ha encontrado coincidencias en ÓPERA FEST SUMMER 2024
+2024/11/16 20:34:13 - DEBUG - Entrando a 'detalles_peli(Korterraza Araba 2024 (Tuesta))'
+2024/11/16 20:34:13 - DEBUG - Entrando a 'detalles_peli(Jazzinema 2024: "Dispararon al pianista")'
+2024/11/16 20:34:13 - DEBUG - Starting new HTTPS connection (10): api.themoviedb.org:443
+2024/11/16 20:34:13 - DEBUG - https://api.themoviedb.org:443 "GET /3/search/multi?query=Dispararon+al+pianista&language=es-ES&include_adult=True HTTP/11" 200 None
+2024/11/16 20:34:13 - DEBUG - Jazzinema 2024: "Dispararon al pianista" cargada en el mapa
+2024/11/16 20:34:13 - DEBUG - Entrando a 'detalles_peli(Semana grande de Donostia 2024: AIFF Festival de Cine Marítimo del Aquarium - Selección de trabajos CIMASUB)'
+2024/11/16 20:34:13 - DEBUG - Entrando a 'detalles_peli("Astérix eta edabe magikoaren sekretua")'
+2024/11/16 20:34:13 - DEBUG - Starting new HTTPS connection (11): api.themoviedb.org:443
+2024/11/16 20:34:14 - INFO - ['Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes internacionales', 'Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes vascos', 'Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes españoles', 'Semana de Cine Fantástico y de Terror de San Sebastián 2023: Maratón de cortometrajes de animación', 'Zinegoak 2024 - ZGHEDAPENA 2024 (Plentzia)', 'Lagunak, erreskatera!', 'Las formas del alma', 'Korterraza Araba 2024 (Alegría-Dulantzi)', 'Napoleon txakurtxoa', 'Korterraza Txiki', 'Korterraza Araba 2024 (Luko)', 'Orfeo beltza', 'Harpetarra', 'Lumaren atzean, diamantes en bruto', 'Korterraza Araba 2024 (Ondategi)', 'Emakumeak* surflari', 'Orfeo beltza', 'Korterraza Araba 2024 (Aramaio)', 'Korterraza Araba 2024 (Zuaza/Zuhatza)', 'Korterraza Araba 2024 (Olabarri)', 'Orfeo beltza', 'Korterraza Araba 2024 (Santuario de Oro)', 'Korterraza Araba 2024 (Zurbano/Zurbao)', 'Korterraza Araba 2024 (Estavillo)', 'Korterraza Araba 2024 (Ordoñana)', 'Korterraza Araba 2024 (Elciego)', 'Korterraza Araba 2024 (Antoñana)', 'Euskarazko film laburrak', 'Korterraza Araba 2024 (Gauna)', 'Korterraza Araba 2024 (Maestu)', 'Korterraza Araba 2024 (Araia)', 'Korterraza Araba 2024 (Lanciego)', 'Korterraza Araba 2024 (Berantevilla)', 'Rabbit Academy, Pazko arraultzen lapurreta handia', 'Doraemon gladiadorea', 'Korterraza Araba 2024 (Valle Salado)', 'Korterraza Araba 2024 (Maestu)', 'Orfeo beltza', 'Korterraza Araba 2024 (Labastida)', 'Izotz Aroa 3: Dinosaurioen egunsentia', 'Korterraza Araba 2024 (Portilla)', 'Korterraza Araba 2024 (Llodio/Laudio)', 'Korterraza Araba 2024 (Añastro)', 'Un año difñicil', 'Orfeo beltza', 'Korterraza Araba 2024 (Payueta/Pagoeta)', 'ÓPERA FEST SUMMER 2024']
+2024/11/16 20:34:23 - INFO - Iniciando scrappy de https://www.blogdepelis.top/
