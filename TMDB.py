@@ -200,7 +200,7 @@ def get_credits(id, serie=False):
 
 def datos_tmdb():
     try:
-        peliculas_blog = json.load(open(f'{R_PATH}/Scrappy-pruebas.json', encoding="utf8"))
+        peliculas_blog = json.load(open(f'{R_PATH}/blogDePelis.json', encoding="utf8"))
         peliculas = []
         providers = []
 
@@ -209,7 +209,7 @@ def datos_tmdb():
         for pelicula in peliculas_blog.values():
             peli_detalles = detalles_peli(pelicula)
             if peli_detalles:
-                peli_detalles["credits"] = get_credits(peli_detalles["id"], "Series" in peli_detalles["categoria"])
+                # peli_detalles["credits"] = get_credits(peli_detalles["id"], "Series" in peli_detalles["categoria"])
                 peliculas.append(peli_detalles) 
 
                 try:
@@ -219,13 +219,13 @@ def datos_tmdb():
                 except Exception as e:
                     logging.error(e)
 
-        archivo_json = f'{W_PATH}/peliculas_api.json'
+        archivo_json = f'{W_PATH}/peliculas.json'
 
         with open(archivo_json, "w", encoding="utf-8") as file: 
             json.dump(peliculas, file, ensure_ascii=False,  indent=4)
             logging.info("Archivo json peliculas generado correctamente.")
 
-        archivo_json = f'{W_PATH}/providers_api.json'
+        archivo_json = f'{W_PATH}/providers.json'
 
         with open(archivo_json, "w", encoding="utf-8") as file: 
             json.dump(providers, file, ensure_ascii=False,  indent=4)

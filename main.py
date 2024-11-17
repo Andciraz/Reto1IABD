@@ -4,8 +4,12 @@ from datetime import datetime
 from IngestaOpenDataPelis import openData
 from TMDB import datos_tmdb
 
+# Remove all handlers associated with the root logger object.
+# for handler in logging.root.handlers[:]:
+#     logging.root.removeHandler(handler)
+
 logging.basicConfig(
-    filename=f"Data/Logs/main-logs-{datetime.now().strftime('%Y%m%d')}.log",
+    filename=f"Logs/main-logs-{datetime.now().strftime('%Y%m%d')}.log",
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
     datefmt="%Y/%m/%d %H:%M:%S"

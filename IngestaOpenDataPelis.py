@@ -92,39 +92,40 @@ def formatear(item):
                 if "Ficha técnica:" in descripcion:
                     descripcion = descripcion.replace("Ficha técnica:", "")
 
-                try:
-                    tablas = soup.find_all("ul")
+                # El siguiente código extraería la información adicional de la descripcion formateandola:
+                # try:
+                #     tablas = soup.find_all("ul")
 
-                    if tablas:
-                        for tabla in tablas:
-                            for li in tabla.find_all("li"):
+                #     if tablas:
+                #         for tabla in tablas:
+                #             for li in tabla.find_all("li"):
 
-                                li_txt = li.get_text()
+                #                 li_txt = li.get_text()
 
-                                if ":" in li_txt:
+                #                 if ":" in li_txt:
 
-                                     # Separa la 'key' del value dividiendo el string por el primer ':'
-                                    str = li_txt.split(":", maxsplit=1)
-                                    key = limpiar_str(str[0])
+                #                      # Separa la 'key' del value dividiendo el string por el primer ':'
+                #                     str = li_txt.split(":", maxsplit=1)
+                #                     key = limpiar_str(str[0])
 
-                                    if "," in str[1]:
-                                        # Si el value contiene una lista en forma de string lo transforma a un objeto lista,
-                                        # sino, guarda el value
-                                        patron = r',| y '
+                #                     if "," in str[1]:
+                #                         # Si el value contiene una lista en forma de string lo transforma a un objeto lista,
+                #                         # sino, guarda el value
+                #                         patron = r',| y '
 
-                                        frags = re.split(patron, str[1])
-                                        for i in range(0, len(frags)):
-                                            frags[i] = frags[i].strip()
-                                        pelicula[key] = frags
-                                    else:
-                                        pelicula[key] = str[1].strip()
-                                else: 
-                                    if "datos" not in pelicula.keys():
-                                        pelicula["datos"] = []
+                #                         frags = re.split(patron, str[1])
+                #                         for i in range(0, len(frags)):
+                #                             frags[i] = frags[i].strip()
+                #                         pelicula[key] = frags
+                #                     else:
+                #                         pelicula[key] = str[1].strip()
+                #                 else: 
+                #                     if "datos" not in pelicula.keys():
+                #                         pelicula["datos"] = []
 
-                                    pelicula["datos"].append(li_txt)
-                except Exception as e: 
-                    logging.critical(f'{e}') #TODO
+                #                     pelicula["datos"].append(li_txt)
+                # except Exception as e: 
+                #     logging.critical(f'{e}') #TODO
 
                 pelicula["description"] = descripcion
 

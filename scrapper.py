@@ -86,13 +86,15 @@ def scrap_movie(movies, movie, category):
             if portada:
                 imagen = portada['src']
 
-            movie_name_with_year = re.sub("– Temporada .+ ", "", re.sub("\(\+18\)", "", movie.get_text(strip=True)))
+            # movie_name_with_year = re.sub("– Temporada .+ ", "", re.sub("\(\+18\)", "", movie.get_text(strip=True)))
+            movie_name_with_year = re.sub("– Temporada .+ ", "", movie.get_text(strip=True))
+            movie_name_with_year = re.sub("\(\+18\)", "", movie_name_with_year)
 
             name = movie_name_with_year[:movie_name_with_year.rfind('(') - 1]
             year = movie_name_with_year[movie_name_with_year.rfind('(') + 1:len(movie_name_with_year) - 1]
-            if not movies.get(movie.get_text(strip=True), False):
+            if not movies.get(name, False):
                 logging.info(f"PELICULA AÑADIDA {movie.get_text(strip=True)}")
-                movies[movie.get_text(strip=True)] = {
+                movies[name] = {
                     "nombre": name,
                     "año": year,
                     "descripción": desc_1 or desc_2 or "No se ha encontrado",
@@ -105,8 +107,9 @@ def scrap_movie(movies, movie, category):
                 logging.info(
                     f"PELICULA REPETIDA {movie.get_text(strip=True)} AÑADIENDO CATEGORIA {category.get_text(strip=True)}")
                 movie_categories = movies.get(name).get("categoria")
-                movie_categories.append(category.get_text(strip=True))
-                movies.get(name)["categoria"] = movie_categories
+                if category.get_text(strip=True) not in movie_categories:
+                    movie_categories.append(category.get_text(strip=True))
+                    movies.get(name)["categoria"] = movie_categories
             return movies.get(movie.get_text(strip=True), False)
         else:
             logging.error(
@@ -207,7 +210,6 @@ def scrap_all(movies, base_url="https://www.blogdepelis.top/"):
                                                 if portada:
                                                     imagen = portada['src']
 
-                                                # TODO: Las porno no van (+18)
                                                 name = movie.get_text(strip=True)[
                                                        :movie.get_text(strip=True).rfind('(') - 1]
                                                 if not movies.get(movie.get_text(strip=True)[
