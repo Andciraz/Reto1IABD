@@ -52,6 +52,11 @@ errores = []
 archivo_json = f'{W_PATH}/peliculas_api.json'
 
 def detalles_peli(pelicula): 
+    """
+        Hace una llamada a la api de TMDB pasando el título de la película como parámetro y 
+        devuelve la pelicula con los parametros adicionales en caso de que encuentre resultados o 
+        None en caso contrario
+    """
     logging.debug(f"Entrando a 'detalles_peli({pelicula["nombre"]})'")
 
     try:
@@ -91,6 +96,9 @@ def detalles_peli(pelicula):
     return pelicula
 
 def providers_peli(peli_detalles):
+    """
+        Hace una llamada a la api y devuelve los providers de la película que se pasa como parámetro.
+    """
     providers = []
 
     if "id" in peli_detalles.keys():       
@@ -139,6 +147,9 @@ def providers_peli(peli_detalles):
             return providers
 
 def cargar_paises():
+    """
+    Carga la lista de paises de la api TMDB en un mapa.
+    """
     try: 
         response = session.get("https://api.themoviedb.org/3/configuration/countries", headers=HEADERS)
 
@@ -150,53 +161,6 @@ def cargar_paises():
 
     except Exception as e: 
         logging.error(f'Error inesperado: {e}')
-
-def get_credits(id, serie=False):
-    url = BASE_CREDITS_URL
-    if serie:
-        url += f"tv/{id}/aggregate_credits?language=es-ES"
-    else:
-        url += f"movie/{id}/credits?language=es-ES"
-    response = session.get(url, headers=HEADERS)
-    credits = {
-        'cast': {},
-        'crew': {},
-    }
-    if response.status_code == 200:
-        data_response = response.json()
-        if serie:
-            for cast in data_response['cast']:
-                if not credits['cast'].get(cast['name'], False):
-                    roles = []
-                    for role in cast['roles']:
-                        roles.append(role['character'])
-                    credits['cast'][cast['name']] = roles
-                else:
-                    for role in cast['roles']:
-                        credits['cast'][cast['name']].append(role['character'])
-            for crew in data_response['crew']:
-                if not credits['crew'].get(crew['name'], False):
-                    jobs = []
-                    for job in crew['jobs']:
-                        jobs.append(job['job'])
-                    credits['crew'][crew['name']] = jobs
-                else:
-                    for job in crew['jobs']:
-                        credits['crew'][crew['name']].append(job['job'])
-        else:
-            for cast in data_response['cast']:
-                if not credits['cast'].get(cast['name'], False):
-                    credits['cast'][cast['name']] = cast['character'].split("/")
-                else:
-                    for char in cast['character'].split("/"):
-                        credits['cast'][cast['name']].append(char)
-            for crew in data_response['crew']:
-                if not credits['crew'].get(crew['name'], False):
-                    credits['crew'][crew['name']] = crew['job'].split("/")
-                else:
-                    for job in crew['job'].split("/"):
-                        credits['crew'][crew['name']].append(job)
-    return credits
 
 def datos_tmdb():
     try:
@@ -230,8 +194,6 @@ def datos_tmdb():
         with open(archivo_json, "w", encoding="utf-8") as file: 
             json.dump(providers, file, ensure_ascii=False,  indent=4)
             logging.info("Archivo json providers generado correctamente.")
-
-        
 
     except requests.exceptions.HTTPError as http_err: 
         logging.error(f'Error HTTP: {http_err}')

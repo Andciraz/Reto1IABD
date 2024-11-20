@@ -7,7 +7,7 @@ import re
 from datetime import datetime
 
 logging.basicConfig(
-    filename=f"Data/scrappy-logs-{datetime.now().strftime('%Y%m%d')}.log",
+    filename=f"Logs/scrappy-logs-{datetime.now().strftime('%Y%m%d')}.log",
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
     datefmt="%Y/%m/%d %H:%M:%S"
